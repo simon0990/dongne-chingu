@@ -1,0 +1,32 @@
+name: Deploy app to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v5
+      - name: Stamp asset versions (avoid stale CSS/JS cache)
+        run: sed -i -E "s/(style\.css|app\.js)\"/\1?v=${GITHUB_SHA::7}\"/g" app/index.html
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: app
+      - id: deployment
+        uses: actions/deploy-pages@v4

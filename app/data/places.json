@@ -1,0 +1,238 @@
+{
+  "meta": {
+    "area": {
+      "ko": "공덕",
+      "en": "Gongdeok",
+      "ja": "コンドク",
+      "zh": "孔德"
+    },
+    "center": [
+      37.5443,
+      126.9516
+    ],
+    "zoom": 16,
+    "countsCheckedOn": "2026-11-19",
+    "thresholds": {
+      "local": 10,
+      "mixed": 3
+    }
+  },
+  "tags": {
+    "solo": {
+      "en": "Fine alone",
+      "ja": "一人でも入りやすい",
+      "zh": "一个人也方便"
+    },
+    "late": {
+      "en": "Open late",
+      "ja": "夜遅くまで営業",
+      "zh": "营业到很晚"
+    },
+    "rainy": {
+      "en": "Good on rainy days",
+      "ja": "雨の日でもOK",
+      "zh": "雨天也适合"
+    },
+    "pets": {
+      "en": "Pets welcome",
+      "ja": "ペット同伴OK",
+      "zh": "可带宠物"
+    }
+  },
+  "places": [
+    {
+      "id": "sample-baekban",
+      "sample": true,
+      "name": {
+        "ko": "(샘플) 골목 백반집",
+        "en": "Alley set-meal diner (sample)",
+        "ja": "路地裏の定食屋（サンプル）",
+        "zh": "小巷家常套餐店（示例）"
+      },
+      "category": {
+        "en": "Korean home-style set meals",
+        "ja": "韓国の家庭料理定食",
+        "zh": "韩式家常套餐"
+      },
+      "lat": 37.5452,
+      "lng": 126.9498,
+      "address": "(샘플 주소) 서울 마포구 ○○로 00",
+      "photo": null,
+      "naverReviews": 1840,
+      "googleReviews": 23,
+      "links": {
+        "naver": "",
+        "google": ""
+      },
+      "tags": [
+        "solo"
+      ],
+      "note": {
+        "en": "I eat here twice a week. Rice, soup and five side dishes come with every meal, and the side dishes are refilled for free.",
+        "ja": "週に2回は来ます。ご飯とスープ、おかず5品がセットで、おかずはおかわり無料です。",
+        "zh": "我一周来两次。每份都有米饭、汤和五样小菜，小菜可以免费续。"
+      },
+      "koreansSay": {
+        "en": [
+          "Big portions for the price",
+          "The side dishes change every day",
+          "Packed with office workers from 12 to 1 pm"
+        ],
+        "ja": [
+          "値段のわりに量が多い",
+          "おかずが毎日変わる",
+          "12時〜13時は会社員で満席"
+        ],
+        "zh": [
+          "分量足，性价比高",
+          "小菜每天都换",
+          "12点到1点上班族很多，常常满座"
+        ]
+      },
+      "order": {
+        "ko": "제육볶음 백반",
+        "roman": "jeyuk-bokkeum baekban",
+        "en": "Spicy stir-fried pork set",
+        "ja": "豚肉の甘辛炒め定食",
+        "zh": "辣炒猪肉套餐",
+        "price": "9,000원"
+      },
+      "say": {
+        "ko": "제육볶음 하나 주세요",
+        "roman": "Jeyuk-bokkeum hana juseyo",
+        "en": "One spicy pork, please.",
+        "ja": "豚肉炒め定食を一つください。",
+        "zh": "请给我一份辣炒猪肉。"
+      }
+    },
+    {
+      "id": "sample-tteokbokki",
+      "sample": true,
+      "name": {
+        "ko": "(샘플) 시장 떡볶이",
+        "en": "Market tteokbokki stall (sample)",
+        "ja": "市場のトッポッキ屋台（サンプル）",
+        "zh": "市场炒年糕小摊（示例）"
+      },
+      "category": {
+        "en": "Street food",
+        "ja": "屋台グルメ",
+        "zh": "街头小吃"
+      },
+      "lat": 37.5431,
+      "lng": 126.9532,
+      "address": "(샘플 주소) 서울 마포구 ○○시장 안",
+      "photo": null,
+      "naverReviews": 620,
+      "googleReviews": 140,
+      "links": {
+        "naver": "",
+        "google": ""
+      },
+      "tags": [
+        "solo",
+        "late"
+      ],
+      "note": {
+        "en": "Stand at the counter and point at what you want. The owner will pour you fish-cake broth in a paper cup. It's free, so take it.",
+        "ja": "カウンターの前に立って、指さしで注文すればOK。紙コップでおでんのスープを出してくれます。無料なので遠慮なくどうぞ。",
+        "zh": "站在摊位前，指一下想要的就行。老板会用纸杯给你倒鱼饼汤，免费的，放心喝。"
+      },
+      "koreansSay": {
+        "en": [
+          "Sweeter than most places",
+          "Paying cash is easiest",
+          "Freshly made around 4 pm"
+        ],
+        "ja": [
+          "ほかの店より甘め",
+          "現金払いがいちばんスムーズ",
+          "16時ごろに作りたてが出る"
+        ],
+        "zh": [
+          "比别家甜一些",
+          "付现金最方便",
+          "下午4点左右刚出锅"
+        ]
+      },
+      "order": {
+        "ko": "떡볶이 1인분",
+        "roman": "tteokbokki irinbun",
+        "en": "One serving of tteokbokki",
+        "ja": "トッポッキ1人前",
+        "zh": "一份炒年糕",
+        "price": "4,000원"
+      },
+      "say": {
+        "ko": "떡볶이 1인분 주세요",
+        "roman": "Tteokbokki irinbun juseyo",
+        "en": "One serving of tteokbokki, please.",
+        "ja": "トッポッキを1人前ください。",
+        "zh": "请给我一份炒年糕。"
+      }
+    },
+    {
+      "id": "sample-cafe",
+      "sample": true,
+      "name": {
+        "ko": "(샘플) 프랜차이즈 카페",
+        "en": "Chain café (sample)",
+        "ja": "チェーンのカフェ（サンプル）",
+        "zh": "连锁咖啡店（示例）"
+      },
+      "category": {
+        "en": "Coffee",
+        "ja": "カフェ",
+        "zh": "咖啡"
+      },
+      "lat": 37.5462,
+      "lng": 126.9541,
+      "address": "(샘플 주소) 서울 마포구 ○○대로 00, 1층",
+      "photo": null,
+      "naverReviews": 300,
+      "googleReviews": 210,
+      "links": {
+        "naver": "",
+        "google": ""
+      },
+      "tags": [
+        "rainy",
+        "pets"
+      ],
+      "note": {
+        "en": "Good for Wi-Fi and a restroom break. Locals don't come here for the coffee, which is why the pin is white.",
+        "ja": "Wi-Fiとトイレ休憩にはちょうどいい店。地元の人がコーヒー目当てで来る店ではないので、ピンは白です。",
+        "zh": "适合连Wi-Fi、上厕所歇歇脚。本地人不会专门来这里喝咖啡，所以标记是白色的。"
+      },
+      "koreansSay": {
+        "en": [
+          "Plenty of seats",
+          "Same menu as every other branch"
+        ],
+        "ja": [
+          "席が多い",
+          "どの店舗でも同じメニュー"
+        ],
+        "zh": [
+          "座位很多",
+          "和其他分店菜单一样"
+        ]
+      },
+      "order": {
+        "ko": "아이스 아메리카노",
+        "roman": "aiseu amerikano",
+        "en": "Iced americano",
+        "ja": "アイスアメリカーノ",
+        "zh": "冰美式",
+        "price": "4,500원"
+      },
+      "say": {
+        "ko": "아이스 아메리카노 한 잔 주세요",
+        "roman": "Aiseu amerikano han jan juseyo",
+        "en": "One iced americano, please.",
+        "ja": "アイスアメリカーノを1杯ください。",
+        "zh": "请给我一杯冰美式。"
+      }
+    }
+  ]
+}

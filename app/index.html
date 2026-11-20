@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Dongne Chingu</title>
+  <meta name="description" content="A map of where Koreans actually go, read from Korean reviews instead of tourist ones.">
+  <meta name="theme-color" content="#F2671F">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" integrity="sha512-h9FcoyWjHcOcmEVkxOfTLnmZFWIH0iZhZT1H2TbOq55xssQGEJHEaIm+PgoUaZbRvQTNTluNOEfb1ZRy6D3BOw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="map" aria-label="Map"></div>
+
+  <div class="top" id="top">
+    <header class="bar">
+      <h1 class="brand__name"><span class="brand__ko" lang="ko">동네친구</span> <span class="brand__ro">Dongne Chingu</span></h1>
+      <p class="brand__tag" id="tagline"></p>
+      <div class="langs" role="group" aria-label="Language">
+        <button type="button" data-lang="en">EN</button>
+        <button type="button" data-lang="ja" lang="ja">日本語</button>
+        <button type="button" data-lang="zh" lang="zh">中文</button>
+      </div>
+    </header>
+    <button type="button" class="legend" id="legend"></button>
+    <p class="maker-note" id="makerNote" lang="ko" hidden>샘플 장소입니다. 대회 전에 내 장소로 바꾸세요.</p>
+  </div>
+
+  <div class="bottom" id="bottom">
+    <nav class="chips" id="chips" aria-label="Filter"></nav>
+    <section class="rail" id="rail" aria-label="Places"></section>
+  </div>
+
+  <div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheetTitle" hidden></div>
+  <button type="button" class="sign" id="sign" hidden></button>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js" integrity="sha512-puJW3E/qXDqYp9IfhAI54BJEaWIfloJ7JWs7OeD5i6ruC9JZL1gERT1wjtwXFlh7CjE7ZJ+/vcRZRkIYIb6p4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="app.js"></script>
+</body>
+</html>
