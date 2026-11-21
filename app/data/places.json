@@ -364,7 +364,7 @@
       "lat": 37.617812,
       "lng": 126.920937,
       "address": "서울 은평구 연서로28길 10",
-      "photo": null,
+      "photo": "photos/dalgadeuk.jpg",
       "naverReviews": 1384,
       "googleReviews": 96,
       "links": {
@@ -420,7 +420,13 @@
         "zh": "炸鸡配啤酒",
         "ko": "치킨과 맥주"
       },
-      "illust": "illust/dalgadeuk.svg"
+      "illust": "illust/dalgadeuk.svg",
+      "photoAlt": {
+        "en": "Fried chicken and fries with draft beer at Dalgadeuk Chicken",
+        "ja": "タルガドゥクチキンのフライドチキンとポテト、生ビール",
+        "zh": "Dalgadeuk 炸鸡店的炸鸡、薯条和生啤",
+        "ko": "달가득치킨의 치킨과 감자튀김, 생맥주"
+      }
     },
     {
       "id": "zannolum",
