@@ -1,1 +1,150 @@
-{ "files": [] }
+{
+  "files": [
+    "1in1jan.note.en.mp3",
+    "1in1jan.note.ja.mp3",
+    "1in1jan.note.zh.mp3",
+    "1in1jan.say.ko.mp3",
+    "cheongryu.note.en.mp3",
+    "cheongryu.note.ja.mp3",
+    "cheongryu.note.zh.mp3",
+    "cheongryu.say.ko.mp3",
+    "dalgadeuk.note.en.mp3",
+    "dalgadeuk.note.ja.mp3",
+    "dalgadeuk.note.zh.mp3",
+    "dalgadeuk.say.ko.mp3",
+    "jingwansa.note.en.mp3",
+    "jingwansa.note.ja.mp3",
+    "jingwansa.note.zh.mp3",
+    "jingwansa.say.ko.mp3",
+    "tteoksan.note.en.mp3",
+    "tteoksan.note.ja.mp3",
+    "tteoksan.note.zh.mp3",
+    "tteoksan.say.ko.mp3",
+    "zannolum.note.en.mp3",
+    "zannolum.note.ja.mp3",
+    "zannolum.note.zh.mp3",
+    "zannolum.say.ko.mp3"
+  ],
+  "sources": {
+    "1in1jan.note.en.mp3": {
+      "text": "f68d53c2a2b7ddb3",
+      "voice": "cgSgspJ2msm6clMCkdW9",
+      "model": "eleven_multilingual_v2"
+    },
+    "1in1jan.note.ja.mp3": {
+      "text": "2a408583f7218438",
+      "voice": "cgSgspJ2msm6clMCkdW9",
+      "model": "eleven_multilingual_v2"
+    },
+    "1in1jan.note.zh.mp3": {
+      "text": "a480d662e9d8cb2f",
+      "voice": "cgSgspJ2msm6clMCkdW9",
+      "model": "eleven_multilingual_v2"
+    },
+    "1in1jan.say.ko.mp3": {
+      "text": "39ea6cf4c22933a7",
+      "voice": "8jHHF8rMqMlg8if2mOUe",
+      "model": "eleven_multilingual_v2"
+    },
+    "cheongryu.note.en.mp3": {
+      "text": "64c7af08c3dd195a",
+      "voice": "cgSgspJ2msm6clMCkdW9",
+      "model": "eleven_multilingual_v2"
+    },
+    "cheongryu.note.ja.mp3": {
+      "text": "eebd8e5b47965318",
+      "voice": "cgSgspJ2msm6clMCkdW9",
+      "model": "eleven_multilingual_v2"
+    },
+    "cheongryu.note.zh.mp3": {
+      "text": "493f1c98f60538cf",
+      "voice": "cgSgspJ2msm6clMCkdW9",
+      "model": "eleven_multilingual_v2"
+    },
+    "cheongryu.say.ko.mp3": {
+      "text": "aa1335b04670ce1c",
+      "voice": "8jHHF8rMqMlg8if2mOUe",
+      "model": "eleven_multilingual_v2"
+    },
+    "dalgadeuk.note.en.mp3": {
+      "text": "10e39a4637c2ed48",
+      "voice": "cgSgspJ2msm6clMCkdW9",
+      "model": "eleven_multilingual_v2"
+    },
+    "dalgadeuk.note.ja.mp3": {
+      "text": "804d60d8344d0e73",
+      "voice": "cgSgspJ2msm6clMCkdW9",
+      "model": "eleven_multilingual_v2"
+    },
+    "dalgadeuk.note.zh.mp3": {
+      "text": "fbd46fb74777ece0",
+      "voice": "cgSgspJ2msm6clMCkdW9",
+      "model": "eleven_multilingual_v2"
+    },
+    "dalgadeuk.say.ko.mp3": {
+      "text": "601f9fec67f16b4f",
+      "voice": "8jHHF8rMqMlg8if2mOUe",
+      "model": "eleven_multilingual_v2"
+    },
+    "jingwansa.note.en.mp3": {
+      "text": "f381b5fc67c8a810",
+      "voice": "cgSgspJ2msm6clMCkdW9",
+      "model": "eleven_multilingual_v2"
+    },
+    "jingwansa.note.ja.mp3": {
+      "text": "8499874b0c50e89b",
+      "voice": "cgSgspJ2msm6clMCkdW9",
+      "model": "eleven_multilingual_v2"
+    },
+    "jingwansa.note.zh.mp3": {
+      "text": "c35007af5644a398",
+      "voice": "cgSgspJ2msm6clMCkdW9",
+      "model": "eleven_multilingual_v2"
+    },
+    "jingwansa.say.ko.mp3": {
+      "text": "81deec1705268c67",
+      "voice": "8jHHF8rMqMlg8if2mOUe",
+      "model": "eleven_multilingual_v2"
+    },
+    "tteoksan.note.en.mp3": {
+      "text": "b2eca6eaff611caa",
+      "voice": "cgSgspJ2msm6clMCkdW9",
+      "model": "eleven_multilingual_v2"
+    },
+    "tteoksan.note.ja.mp3": {
+      "text": "d4ecf20f3706bd79",
+      "voice": "cgSgspJ2msm6clMCkdW9",
+      "model": "eleven_multilingual_v2"
+    },
+    "tteoksan.note.zh.mp3": {
+      "text": "607984b9f7f23ab3",
+      "voice": "cgSgspJ2msm6clMCkdW9",
+      "model": "eleven_multilingual_v2"
+    },
+    "tteoksan.say.ko.mp3": {
+      "text": "c1698586a1dec22a",
+      "voice": "8jHHF8rMqMlg8if2mOUe",
+      "model": "eleven_multilingual_v2"
+    },
+    "zannolum.note.en.mp3": {
+      "text": "b9ab808d69f43f11",
+      "voice": "cgSgspJ2msm6clMCkdW9",
+      "model": "eleven_multilingual_v2"
+    },
+    "zannolum.note.ja.mp3": {
+      "text": "c4b414f993bd063f",
+      "voice": "cgSgspJ2msm6clMCkdW9",
+      "model": "eleven_multilingual_v2"
+    },
+    "zannolum.note.zh.mp3": {
+      "text": "12bf982f8af587f1",
+      "voice": "cgSgspJ2msm6clMCkdW9",
+      "model": "eleven_multilingual_v2"
+    },
+    "zannolum.say.ko.mp3": {
+      "text": "125ceb816a2325da",
+      "voice": "8jHHF8rMqMlg8if2mOUe",
+      "model": "eleven_multilingual_v2"
+    }
+  }
+}

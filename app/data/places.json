@@ -1,17 +1,27 @@
 {
   "meta": {
     "area": {
-      "ko": "공덕",
-      "en": "Gongdeok",
-      "ja": "コンドク",
-      "zh": "孔德"
+      "ko": "연신내·은평",
+      "en": "Yeonsinnae & Eunpyeong",
+      "ja": "ヨンシンネ・恩平",
+      "zh": "延新内·恩平"
     },
     "center": [
-      37.5443,
-      126.9516
+      37.6176,
+      126.9208
     ],
     "zoom": 16,
-    "countsCheckedOn": "2026-11-19",
+    "here": {
+      "name": {
+        "ko": "연신내역",
+        "en": "Yeonsinnae Stn.",
+        "ja": "ヨンシンネ駅",
+        "zh": "延新内站"
+      },
+      "lat": 37.6176,
+      "lng": 126.9208
+    },
+    "countsCheckedOn": "2026-11-21",
     "thresholds": {
       "local": 10,
       "mixed": 3
@@ -41,198 +51,432 @@
   },
   "places": [
     {
-      "id": "sample-baekban",
-      "sample": true,
+      "id": "tteoksan",
       "name": {
-        "ko": "(샘플) 골목 백반집",
-        "en": "Alley set-meal diner (sample)",
-        "ja": "路地裏の定食屋（サンプル）",
-        "zh": "小巷家常套餐店（示例）"
+        "ko": "떡산",
+        "en": "Tteoksan",
+        "ja": "トッサン",
+        "zh": "Tteoksan 炒年糕"
       },
       "category": {
-        "en": "Korean home-style set meals",
-        "ja": "韓国の家庭料理定食",
-        "zh": "韩式家常套餐"
+        "en": "Tteokbokki stall in Yeonseo Market",
+        "ja": "ヨンソ市場のトッポッキ店",
+        "zh": "延曙市场里的炒年糕店"
       },
-      "lat": 37.5452,
-      "lng": 126.9498,
-      "address": "(샘플 주소) 서울 마포구 ○○로 00",
+      "emoji": "🍢",
+      "lat": 37.619563,
+      "lng": 126.922313,
+      "address": "서울 은평구 연서로 247-1 (연서시장)",
       "photo": null,
-      "naverReviews": 1840,
-      "googleReviews": 23,
+      "naverReviews": 2250,
+      "googleReviews": 132,
       "links": {
-        "naver": "",
-        "google": ""
+        "naver": "https://map.naver.com/p/search/%EC%9D%80%ED%8F%89%20%EB%96%A1%EC%82%B0",
+        "google": "https://www.google.com/maps/search/?api=1&query=%EB%96%A1%EC%82%B0%20%EC%84%9C%EC%9A%B8%20%EC%9D%80%ED%8F%89%EA%B5%AC%20%EC%97%B0%EC%84%9C%EB%A1%9C%20247-1%20%28%EC%97%B0%EC%84%9C%EC%8B%9C%EC%9E%A5%29"
       },
       "tags": [
-        "solo"
-      ],
-      "note": {
-        "en": "I eat here twice a week. Rice, soup and five side dishes come with every meal, and the side dishes are refilled for free.",
-        "ja": "週に2回は来ます。ご飯とスープ、おかず5品がセットで、おかずはおかわり無料です。",
-        "zh": "我一周来两次。每份都有米饭、汤和五样小菜，小菜可以免费续。"
-      },
-      "koreansSay": {
-        "en": [
-          "Big portions for the price",
-          "The side dishes change every day",
-          "Packed with office workers from 12 to 1 pm"
-        ],
-        "ja": [
-          "値段のわりに量が多い",
-          "おかずが毎日変わる",
-          "12時〜13時は会社員で満席"
-        ],
-        "zh": [
-          "分量足，性价比高",
-          "小菜每天都换",
-          "12点到1点上班族很多，常常满座"
-        ]
-      },
-      "order": {
-        "ko": "제육볶음 백반",
-        "roman": "jeyuk-bokkeum baekban",
-        "en": "Spicy stir-fried pork set",
-        "ja": "豚肉の甘辛炒め定食",
-        "zh": "辣炒猪肉套餐",
-        "price": "9,000원"
-      },
-      "say": {
-        "ko": "제육볶음 하나 주세요",
-        "roman": "Jeyuk-bokkeum hana juseyo",
-        "en": "One spicy pork, please.",
-        "ja": "豚肉炒め定食を一つください。",
-        "zh": "请给我一份辣炒猪肉。"
-      }
-    },
-    {
-      "id": "sample-tteokbokki",
-      "sample": true,
-      "name": {
-        "ko": "(샘플) 시장 떡볶이",
-        "en": "Market tteokbokki stall (sample)",
-        "ja": "市場のトッポッキ屋台（サンプル）",
-        "zh": "市场炒年糕小摊（示例）"
-      },
-      "category": {
-        "en": "Street food",
-        "ja": "屋台グルメ",
-        "zh": "街头小吃"
-      },
-      "lat": 37.5431,
-      "lng": 126.9532,
-      "address": "(샘플 주소) 서울 마포구 ○○시장 안",
-      "photo": null,
-      "naverReviews": 620,
-      "googleReviews": 140,
-      "links": {
-        "naver": "",
-        "google": ""
-      },
-      "tags": [
-        "solo",
-        "late"
-      ],
-      "note": {
-        "en": "Stand at the counter and point at what you want. The owner will pour you fish-cake broth in a paper cup. It's free, so take it.",
-        "ja": "カウンターの前に立って、指さしで注文すればOK。紙コップでおでんのスープを出してくれます。無料なので遠慮なくどうぞ。",
-        "zh": "站在摊位前，指一下想要的就行。老板会用纸杯给你倒鱼饼汤，免费的，放心喝。"
-      },
-      "koreansSay": {
-        "en": [
-          "Sweeter than most places",
-          "Paying cash is easiest",
-          "Freshly made around 4 pm"
-        ],
-        "ja": [
-          "ほかの店より甘め",
-          "現金払いがいちばんスムーズ",
-          "16時ごろに作りたてが出る"
-        ],
-        "zh": [
-          "比别家甜一些",
-          "付现金最方便",
-          "下午4点左右刚出锅"
-        ]
-      },
-      "order": {
-        "ko": "떡볶이 1인분",
-        "roman": "tteokbokki irinbun",
-        "en": "One serving of tteokbokki",
-        "ja": "トッポッキ1人前",
-        "zh": "一份炒年糕",
-        "price": "4,000원"
-      },
-      "say": {
-        "ko": "떡볶이 1인분 주세요",
-        "roman": "Tteokbokki irinbun juseyo",
-        "en": "One serving of tteokbokki, please.",
-        "ja": "トッポッキを1人前ください。",
-        "zh": "请给我一份炒年糕。"
-      }
-    },
-    {
-      "id": "sample-cafe",
-      "sample": true,
-      "name": {
-        "ko": "(샘플) 프랜차이즈 카페",
-        "en": "Chain café (sample)",
-        "ja": "チェーンのカフェ（サンプル）",
-        "zh": "连锁咖啡店（示例）"
-      },
-      "category": {
-        "en": "Coffee",
-        "ja": "カフェ",
-        "zh": "咖啡"
-      },
-      "lat": 37.5462,
-      "lng": 126.9541,
-      "address": "(샘플 주소) 서울 마포구 ○○대로 00, 1층",
-      "photo": null,
-      "naverReviews": 300,
-      "googleReviews": 210,
-      "links": {
-        "naver": "",
-        "google": ""
-      },
-      "tags": [
-        "rainy",
         "pets"
       ],
       "note": {
-        "en": "Good for Wi-Fi and a restroom break. Locals don't come here for the coffee, which is why the pin is white.",
-        "ja": "Wi-Fiとトイレ休憩にはちょうどいい店。地元の人がコーヒー目当てで来る店ではないので、ピンは白です。",
-        "zh": "适合连Wi-Fi、上厕所歇歇脚。本地人不会专门来这里喝咖啡，所以标记是白色的。"
+        "en": "This stall was on Netflix's Culinary Class Wars season 2. It's inside Yeonseo Market, a few minutes from the station. The sauce is thick, sweet and spicy, and the fried snacks are huge, so dip them in it.",
+        "ja": "Netflix「白と黒のスプーン」シーズン2に登場したお店。駅から数分のヨンソ市場の中にあります。甘辛くとろっとしたソースに、大きな天ぷらをつけて食べて。",
+        "zh": "这家店上过 Netflix《黑白厨师》第二季，就在离车站几分钟的延曙市场里。酱汁浓稠甜辣，炸物个头很大，蘸着酱吃最好。"
       },
       "koreansSay": {
         "en": [
-          "Plenty of seats",
-          "Same menu as every other branch"
+          "Thick, sweet-spicy sauce made with rice syrup and gochujang",
+          "The fried snacks are big and very crunchy",
+          "Some say portions got smaller as prices went up"
         ],
         "ja": [
-          "席が多い",
-          "どの店舗でも同じメニュー"
+          "水あめとコチュジャンで作る、とろっと甘辛いソース",
+          "天ぷらが大きくて、とてもサクサク",
+          "値上がりで量が減ったという声も"
         ],
         "zh": [
-          "座位很多",
-          "和其他分店菜单一样"
+          "用米糖浆和辣椒酱熬的酱汁，浓稠甜辣",
+          "炸物个头大，非常酥脆",
+          "也有人说涨价后分量变少了"
         ]
       },
       "order": {
-        "ko": "아이스 아메리카노",
-        "roman": "aiseu amerikano",
-        "en": "Iced americano",
-        "ja": "アイスアメリカーノ",
-        "zh": "冰美式",
-        "price": "4,500원"
+        "ko": "떡볶이, 튀김, 순대",
+        "roman": "tteokbokki, twigim, sundae",
+        "en": "Spicy rice cakes, fried snacks and blood sausage",
+        "ja": "トッポッキ、天ぷら、スンデ",
+        "zh": "炒年糕、炸物、血肠"
       },
       "say": {
-        "ko": "아이스 아메리카노 한 잔 주세요",
-        "roman": "Aiseu amerikano han jan juseyo",
-        "en": "One iced americano, please.",
-        "ja": "アイスアメリカーノを1杯ください。",
-        "zh": "请给我一杯冰美式。"
-      }
+        "ko": "떡볶이 1인분이랑 튀김 주세요",
+        "roman": "Tteokbokki irinbun-irang twigim juseyo",
+        "en": "One tteokbokki and some fried snacks, please.",
+        "ja": "トッポッキ1人前と天ぷらをください。",
+        "zh": "请给我一份炒年糕和一些炸物。"
+      },
+      "tagline": {
+        "en": "Market brunch",
+        "ja": "市場でブランチ",
+        "zh": "市场早午饭"
+      },
+      "illust": "illust/tteoksan.svg"
+    },
+    {
+      "id": "cheongryu",
+      "name": {
+        "ko": "청류 은평한옥마을본점",
+        "en": "Cheongryu (Hanok Village)",
+        "ja": "チョンリュ 恩平韓屋村店",
+        "zh": "Cheongryu 恩平韩屋村店"
+      },
+      "category": {
+        "en": "Pyongyang-style cold noodles",
+        "ja": "平壌冷麺の店",
+        "zh": "平壤冷面店"
+      },
+      "emoji": "🍜",
+      "lat": 37.640062,
+      "lng": 126.936937,
+      "address": "서울 은평구 진관동 219-11",
+      "photo": null,
+      "naverReviews": 6484,
+      "googleReviews": 181,
+      "links": {
+        "naver": "https://map.naver.com/p/search/%EC%9D%80%ED%8F%89%20%EC%B2%AD%EB%A5%98%20%EC%9D%80%ED%8F%89%ED%95%9C%EC%98%A5%EB%A7%88%EC%9D%84%EC%A0%90",
+        "google": "https://www.google.com/maps/search/?api=1&query=%EC%B2%AD%EB%A5%98%20%EC%9D%80%ED%8F%89%ED%95%9C%EC%98%A5%EB%A7%88%EC%9D%84%EC%A0%90%20%EC%84%9C%EC%9A%B8%20%EC%9D%80%ED%8F%89%EA%B5%AC%20%EC%A7%84%EA%B4%80%EB%8F%99%20219-11"
+      },
+      "tags": [],
+      "note": {
+        "en": "This is Pyongyang-style naengmyeon: a light, clean broth, not the sweet and sour kind. Add the bracken (gosari) dumplings, which few places make.",
+        "ja": "ここは平壌式の冷麺。甘酸っぱいタイプではなく、あっさり澄んだスープです。珍しいワラビ餃子もぜひ。",
+        "zh": "这里是平壤式冷面，汤底清淡干净，不是酸甜口味。再点一份少见的蕨菜饺子。"
+      },
+      "koreansSay": {
+        "en": [
+          "Clean, savory broth for Pyongyang naengmyeon",
+          "Bracken dumplings and mung bean pancake are favorites",
+          "Perilla-oil noodles and beef soup are popular too"
+        ],
+        "ja": [
+          "平壌冷麺のスープがすっきりして香ばしい",
+          "ワラビ餃子と緑豆チヂミが人気",
+          "エゴマ油の麺やコムタンも好評"
+        ],
+        "zh": [
+          "平壤冷面汤头清爽鲜香",
+          "蕨菜饺子和绿豆煎饼很受欢迎",
+          "紫苏油拌面和牛骨汤也很受好评"
+        ]
+      },
+      "order": {
+        "ko": "평양냉면, 고사리만두",
+        "roman": "pyeongyang naengmyeon, gosari mandu",
+        "en": "Pyongyang cold noodles and bracken dumplings",
+        "ja": "平壌冷麺、ワラビ餃子",
+        "zh": "平壤冷面、蕨菜饺子"
+      },
+      "say": {
+        "ko": "평양냉면 하나랑 고사리만두 주세요",
+        "roman": "Pyeongyang naengmyeon hana-rang gosari mandu juseyo",
+        "en": "One Pyongyang naengmyeon and the bracken dumplings, please.",
+        "ja": "平壌冷麺ひとつと、ワラビ餃子をください。",
+        "zh": "请给我一份平壤冷面和蕨菜饺子。"
+      },
+      "tagline": {
+        "en": "Cold noodles",
+        "ja": "冷麺ランチ",
+        "zh": "冷面午餐"
+      },
+      "illust": "illust/cheongryu.svg"
+    },
+    {
+      "id": "1in1jan",
+      "name": {
+        "ko": "1인1잔",
+        "en": "1in1jan Café",
+        "ja": "1人1杯カフェ",
+        "zh": "一人一杯咖啡馆"
+      },
+      "category": {
+        "en": "Rooftop café over the hanok village",
+        "ja": "韓屋村を見下ろすルーフトップカフェ",
+        "zh": "俯瞰韩屋村的屋顶咖啡馆"
+      },
+      "emoji": "☕",
+      "lat": 37.641062,
+      "lng": 126.937938,
+      "address": "서울 은평구 연서로 534",
+      "photo": null,
+      "naverReviews": 7148,
+      "googleReviews": 1638,
+      "links": {
+        "naver": "https://map.naver.com/p/search/%EC%9D%80%ED%8F%89%201%EC%9D%B81%EC%9E%94",
+        "google": "https://www.google.com/maps/search/?api=1&query=1%EC%9D%B81%EC%9E%94%20%EC%84%9C%EC%9A%B8%20%EC%9D%80%ED%8F%89%EA%B5%AC%20%EC%97%B0%EC%84%9C%EB%A1%9C%20534"
+      },
+      "tags": [],
+      "note": {
+        "en": "The name is the rule: one drink per person. Head straight to the 4th floor or the rooftop for the view over the hanok roofs and Bukhansan mountain.",
+        "ja": "店名どおり、1人1杯がルール。4階か屋上へ行けば、韓屋の屋根と北漢山が一望できます。",
+        "zh": "店名就是规矩：每人点一杯。直接上四楼或屋顶，可以看到韩屋屋顶和北汉山。"
+      },
+      "koreansSay": {
+        "en": [
+          "People come for the view of the hanok village and mountains",
+          "Upper floors and the rooftop are quieter",
+          "Busy on weekends, and the coffee itself is just okay"
+        ],
+        "ja": [
+          "韓屋村と山の景色が目当て",
+          "上の階と屋上のほうが静か",
+          "週末は混雑、コーヒーの味は普通"
+        ],
+        "zh": [
+          "大家是冲着韩屋村和山景来的",
+          "楼上和屋顶比较安静",
+          "周末人多，咖啡本身一般"
+        ]
+      },
+      "say": {
+        "ko": "4층에 자리 있어요?",
+        "roman": "Sa-cheung-e jari isseoyo?",
+        "en": "Are there seats on the 4th floor?",
+        "ja": "4階に席はありますか？",
+        "zh": "四楼有座位吗？"
+      },
+      "tagline": {
+        "en": "Rooftop view",
+        "ja": "屋上の絶景",
+        "zh": "屋顶美景"
+      },
+      "illust": "illust/1in1jan.svg"
+    },
+    {
+      "id": "jingwansa",
+      "name": {
+        "ko": "진관사",
+        "en": "Jingwansa Temple",
+        "ja": "津寛寺（チングァンサ）",
+        "zh": "津宽寺"
+      },
+      "category": {
+        "en": "Historic Buddhist temple by the forest",
+        "ja": "森の中の歴史ある仏教寺院",
+        "zh": "森林边历史悠久的佛教寺庙"
+      },
+      "emoji": "🪷",
+      "lat": 37.638438,
+      "lng": 126.946438,
+      "address": "서울 은평구 진관길 73",
+      "photo": null,
+      "naverReviews": 3024,
+      "googleReviews": 3343,
+      "links": {
+        "naver": "https://map.naver.com/p/search/%EC%9D%80%ED%8F%89%20%EC%A7%84%EA%B4%80%EC%82%AC",
+        "google": "https://www.google.com/maps/search/?api=1&query=%EC%A7%84%EA%B4%80%EC%82%AC%20%EC%84%9C%EC%9A%B8%20%EC%9D%80%ED%8F%89%EA%B5%AC%20%EC%A7%84%EA%B4%80%EA%B8%B8%2073"
+      },
+      "tags": [],
+      "note": {
+        "en": "About a 10-minute walk up from the hanok village. It's quiet, and the tea house inside is a good place to rest your legs before heading back.",
+        "ja": "韓屋村から歩いて10分ほど。静かで、境内のお茶屋さんでひと休みしてから戻るのがおすすめ。",
+        "zh": "从韩屋村步行约10分钟。这里很安静，回去之前可以在寺内的茶馆歇歇脚。"
+      },
+      "koreansSay": {
+        "en": [
+          "Peaceful temple next to a forest valley",
+          "There is a traditional tea house in the grounds",
+          "Runs temple stay programs"
+        ],
+        "ja": [
+          "森の渓谷に囲まれた静かなお寺",
+          "境内に伝統茶のお茶屋さんがある",
+          "テンプルステイも体験できる"
+        ],
+        "zh": [
+          "紧挨森林溪谷的宁静寺庙",
+          "寺内有传统茶馆",
+          "可以参加寺院寄宿体验"
+        ]
+      },
+      "say": {
+        "ko": "찻집이 어디예요?",
+        "roman": "Chatjib-i eodiyeyo?",
+        "en": "Where is the tea house?",
+        "ja": "お茶屋さんはどこですか？",
+        "zh": "茶馆在哪里？"
+      },
+      "tagline": {
+        "en": "Temple & tea",
+        "ja": "お寺とお茶",
+        "zh": "寺庙与茶"
+      },
+      "illust": "illust/jingwansa.svg"
+    },
+    {
+      "id": "dalgadeuk",
+      "name": {
+        "ko": "달가득치킨",
+        "en": "Dalgadeuk Chicken",
+        "ja": "タルガドゥクチキン",
+        "zh": "Dalgadeuk 炸鸡"
+      },
+      "category": {
+        "en": "Neighborhood fried chicken and draft beer",
+        "ja": "地元のチキンと生ビール",
+        "zh": "街坊炸鸡配生啤"
+      },
+      "emoji": "🍗",
+      "lat": 37.617812,
+      "lng": 126.920937,
+      "address": "서울 은평구 연서로28길 10",
+      "photo": null,
+      "naverReviews": 1384,
+      "googleReviews": 96,
+      "links": {
+        "naver": "https://map.naver.com/p/search/%EC%9D%80%ED%8F%89%20%EB%8B%AC%EA%B0%80%EB%93%9D%EC%B9%98%ED%82%A8",
+        "google": "https://www.google.com/maps/search/?api=1&query=%EB%8B%AC%EA%B0%80%EB%93%9D%EC%B9%98%ED%82%A8%20%EC%84%9C%EC%9A%B8%20%EC%9D%80%ED%8F%89%EA%B5%AC%20%EC%97%B0%EC%84%9C%EB%A1%9C28%EA%B8%B8%2010"
+      },
+      "tags": [],
+      "note": {
+        "en": "Back in Yeonsinnae for dinner. A small chicken place down an alley, not a chain. Get half plain fried, half soy sauce, with a draft beer.",
+        "ja": "夕食はヨンシンネに戻って。路地裏の小さなチキン屋で、チェーン店ではありません。フライドとしょうゆ味のハーフ&ハーフに生ビールを。",
+        "zh": "晚饭回到延新内。这是巷子里的一家小炸鸡店，不是连锁店。点原味和酱油味各半，再配一杯生啤。"
+      },
+      "koreansSay": {
+        "en": [
+          "A local pick when you're tired of chain chicken",
+          "Creamy tuumba tteokbokki with the chicken is a favorite combo",
+          "Half fried, half soy sauce with draft beer is the usual order"
+        ],
+        "ja": [
+          "チェーンのチキンに飽きた人の地元の店",
+          "クリーミーなトゥーンバトッポッキとチキンの組み合わせが人気",
+          "フライドとしょうゆのハーフに生ビールが定番"
+        ],
+        "zh": [
+          "吃腻了连锁炸鸡的本地人会来这里",
+          "奶油图巴炒年糕配炸鸡是人气组合",
+          "原味酱油味各半配生啤是常点的"
+        ]
+      },
+      "order": {
+        "ko": "후라이드 반 간장 반, 투움바떡볶이, 생맥주",
+        "roman": "huraideu ban ganjang ban, tuumba tteokbokki, saengmaekju",
+        "en": "Half fried, half soy-sauce chicken, creamy tuumba tteokbokki and draft beer",
+        "ja": "フライドとしょうゆのハーフ、トゥーンバトッポッキ、生ビール",
+        "zh": "原味酱油味各半的炸鸡、奶油图巴炒年糕、生啤"
+      },
+      "say": {
+        "ko": "후라이드 반 간장 반이랑 생맥주 두 잔 주세요",
+        "roman": "Huraideu ban ganjang ban-irang saengmaekju du jan juseyo",
+        "en": "Half fried, half soy-sauce chicken and two draft beers, please.",
+        "ja": "フライドとしょうゆ味のハーフ&ハーフと、生ビール2杯ください。",
+        "zh": "请给我原味和酱油味各半的炸鸡，再来两杯生啤。"
+      },
+      "tagline": {
+        "en": "Chicken & beer",
+        "ja": "チキンとビール",
+        "zh": "炸鸡配啤酒"
+      },
+      "illust": "illust/dalgadeuk.svg"
+    },
+    {
+      "id": "zannolum",
+      "name": {
+        "ko": "잔놀음",
+        "en": "Zannolum (Korean sool bar)",
+        "ja": "チャンノルム（伝統酒バー）",
+        "zh": "Zannolum 韩国传统酒吧"
+      },
+      "category": {
+        "en": "Korean traditional liquor bar",
+        "ja": "韓国伝統酒バー",
+        "zh": "韩国传统酒吧"
+      },
+      "emoji": "🥃",
+      "lat": 37.619062,
+      "lng": 126.917938,
+      "address": "서울 은평구 연서로29길 21-3 2층",
+      "photo": null,
+      "naverReviews": 379,
+      "googleReviews": 6,
+      "links": {
+        "naver": "https://map.naver.com/p/search/%EC%9D%80%ED%8F%89%20%EC%9E%94%EB%86%80%EC%9D%8C",
+        "google": "https://www.google.com/maps/search/?api=1&query=%EC%9E%94%EB%86%80%EC%9D%8C%20%EC%84%9C%EC%9A%B8%20%EC%9D%80%ED%8F%89%EA%B5%AC%20%282%EC%B8%B5%29%20%E2%80%94%20%EC%A3%BC%EC%86%8C%20%ED%99%95%EC%9D%B8%20%EC%A4%91"
+      },
+      "tags": [
+        "late"
+      ],
+      "note": {
+        "en": "End the night with Korean traditional liquor. Tell the owner what you like and ask for a recommendation. You can order by the glass. Closed on Mondays.",
+        "ja": "締めは韓国の伝統酒で。好みを伝えて、店主におすすめを聞いてみて。グラスで頼めます。月曜定休。",
+        "zh": "用韩国传统酒结束这一晚。告诉老板你的口味，请他推荐，可以按杯点。周一休息。"
+      },
+      "koreansSay": {
+        "en": [
+          "A big lineup of Korean traditional liquor",
+          "Bar snacks are good for the price",
+          "The owner is friendly and happy to recommend"
+        ],
+        "ja": [
+          "韓国伝統酒の品ぞろえが豊富",
+          "おつまみが値段のわりにおいしい",
+          "店主が親切で、おすすめを教えてくれる"
+        ],
+        "zh": [
+          "韩国传统酒种类很多",
+          "下酒菜物超所值",
+          "老板很热情，乐意推荐"
+        ]
+      },
+      "order": {
+        "ko": "전통주 잔술, 안주",
+        "roman": "jeontongju jansul, anju",
+        "en": "Traditional liquor by the glass, with bar snacks",
+        "ja": "伝統酒をグラスで、おつまみ",
+        "zh": "按杯点的传统酒，下酒菜"
+      },
+      "say": {
+        "ko": "추천해 주시는 전통주 한 잔 주세요",
+        "roman": "Chucheonhae jusineun jeontongju han jan juseyo",
+        "en": "A glass of the traditional liquor you'd recommend, please.",
+        "ja": "おすすめの伝統酒を一杯ください。",
+        "zh": "请给我一杯您推荐的传统酒。"
+      },
+      "tagline": {
+        "en": "Korean sool",
+        "ja": "伝統酒で一杯",
+        "zh": "传统酒小酌"
+      },
+      "illust": "illust/zannolum.svg"
+    }
+  ],
+  "courses": [
+    {
+      "id": "eunpyeong-day",
+      "name": {
+        "en": "A day in Eunpyeong",
+        "ja": "恩平で過ごす一日",
+        "zh": "恩平一日游"
+      },
+      "blurb": {
+        "en": "Market brunch, cold noodles and coffee by the hanok village, a quiet temple, then chicken and Korean drinks back in Yeonsinnae.",
+        "ja": "市場でブランチ、韓屋村で冷麺とコーヒー、静かなお寺。夜はヨンシンネに戻ってチキンと伝統酒。",
+        "zh": "市场里吃早午饭，韩屋村吃冷面喝咖啡，再去安静的寺庙。晚上回延新内吃炸鸡、喝传统酒。"
+      },
+      "stops": [
+        "tteoksan",
+        {
+          "place": "cheongryu",
+          "move": {
+            "en": "Bus 7211 from Yeonsinnae Stn. exit 3",
+            "ja": "ヨンシンネ駅3番出口からバス7211番",
+            "zh": "从延新内站3号出口乘7211路公交"
+          }
+        },
+        "1in1jan",
+        "jingwansa",
+        "dalgadeuk",
+        "zannolum"
+      ]
     }
   ]
 }

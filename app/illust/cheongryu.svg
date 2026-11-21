@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+<g stroke="#2A2320" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+<rect x="0" y="0" width="400" height="400" fill="#CDE7F2" stroke="none"/>
+<!-- roof -->
+<path d="M0 0H400V92Q200 60 0 92Z" fill="#4A4A52"/>
+<path d="M0 92Q200 60 400 92L400 108Q200 76 0 108Z" fill="#3A3A3F"/>
+<g stroke-width="4" fill="none">
+<path d="M50 24V80M100 20V74M150 17V70M200 16V68M250 17V70M300 20V74M350 24V80"/>
+</g>
+<!-- table -->
+<rect x="0" y="150" width="400" height="250" fill="#B9814F"/>
+<g stroke-width="4" fill="none" stroke="#7A4A2B">
+<path d="M0 200H400M0 300H400M0 360H400"/>
+</g>
+<!-- chopsticks -->
+<path d="M38 372L330 292" stroke-width="12" fill="none"/>
+<path d="M38 372L330 292" stroke="#CFCFD4" stroke-width="5" fill="none"/>
+<path d="M60 384L350 304" stroke-width="12" fill="none"/>
+<path d="M60 384L350 304" stroke="#CFCFD4" stroke-width="5" fill="none"/>
+<!-- spoon -->
+<path d="M355 190L378 252" stroke-width="14" fill="none"/>
+<path d="M355 190L378 252" stroke="#CFCFD4" stroke-width="7" fill="none"/>
+<ellipse cx="350" cy="172" rx="16" ry="24" fill="#CFCFD4" transform="rotate(-20 350 172)"/>
+<!-- bowl body -->
+<path d="M52 205Q60 345 200 350Q340 345 348 205Z" fill="#E9B949"/>
+<path d="M170 350H230V366Q200 372 170 366Z" fill="#C9962E"/>
+<path d="M56 235Q200 275 344 235" fill="none" stroke-width="4" stroke="#C9962E"/>
+<!-- rim -->
+<ellipse cx="200" cy="205" rx="150" ry="62" fill="#C9962E"/>
+<ellipse cx="200" cy="205" rx="130" ry="50" fill="#E8E2CC"/>
+<!-- noodles -->
+<ellipse cx="200" cy="200" rx="92" ry="34" fill="#BFB3A0"/>
+<g fill="none" stroke-width="3" stroke="#8F836F">
+<path d="M120 200Q160 176 200 190Q240 176 280 200"/>
+<path d="M126 210Q165 188 200 202Q235 188 274 210"/>
+<path d="M140 190Q200 168 260 190"/>
+<path d="M146 218Q200 200 254 218"/>
+</g>
+<!-- toppings -->
+<ellipse cx="236" cy="190" rx="28" ry="18" fill="#FFF8EC"/>
+<circle cx="238" cy="189" r="9" fill="#F4C542" stroke-width="4"/>
+<path d="M140 190Q165 172 188 190Q165 204 140 190Z" fill="#B98A73" stroke-width="4"/>
+<path d="M152 214Q178 198 202 214Q178 228 152 214Z" fill="#B98A73" stroke-width="4"/>
+<g fill="none" stroke="#4F8A4B" stroke-width="5">
+<path d="M196 176L214 168M200 184L220 176M206 170L222 164"/>
+</g>
+<ellipse cx="248" cy="216" rx="20" ry="9" fill="#FFF8EC" stroke-width="4"/>
+</g>
+</svg>
