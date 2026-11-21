@@ -518,37 +518,57 @@
   /* ---------- course stops as illustrated speech bubbles ----------
      Bubbles sit above their spot with a short stem. Stops close together on screen are fanned out
      side by side and joined to their spot by a leader line, so nothing hides behind anything else. */
-  const BUB = { w: 104, h: 146, gap: 8, lift: 24 };
+  const BUB = { w: 76, h: 98, gap: 6, lift: 14 };
   let bubbleLayout = new Map();
+  /* Each bubble tries spots right around its own pin (above, above-right, above-left, right, left, ...)
+     and takes the first one that doesn't cover a bubble already placed, so it never strays far. */
   function layoutBubbles() {
     bubbleLayout = new Map();
     if (!course || !map) return;
-    const pts = courseStops(course).map((p) => ({ p, pt: map.latLngToLayerPoint([p.lat, p.lng]) }));
-    const groups = [];
-    pts.forEach((o) => {
-      const g = groups.find((gr) => gr.some((m) => Math.abs(m.pt.x - o.pt.x) < BUB.w + BUB.gap && Math.abs(m.pt.y - o.pt.y) < BUB.h));
-      if (g) g.push(o); else groups.push([o]);
-    });
-    groups.forEach((g) => {
-      g.sort((a, b) => a.pt.x - b.pt.x);
-      const cx = g.reduce((s, o) => s + o.pt.x, 0) / g.length;
-      const top = Math.min(...g.map((o) => o.pt.y));
-      // Keep the whole row on screen.
-      const width = g.length * (BUB.w + BUB.gap) - BUB.gap;
-      const left = map.layerPointToContainerPoint(L.point(cx - width / 2, 0)).x;
-      const room = map.getSize().x;
-      let shift = 0;
-      if (width <= room - 16) {
-        if (left < 8) shift = 8 - left;
-        else if (left + width > room - 8) shift = room - 8 - (left + width);
-      }
-      g.forEach((o, k) => {
-        const bx = cx + shift + (k - (g.length - 1) / 2) * (BUB.w + BUB.gap);
-        bubbleLayout.set(o.p.id, { dx: Math.round(bx - o.pt.x), dy: Math.round(top - BUB.lift - o.pt.y) });
+    const size = map.getSize();
+    const W = BUB.w, H = BUB.h, s = BUB.lift, m = BUB.gap;
+    const cands = [
+      [0, -(s + H / 2)], [W / 2 + m / 2, -(s + H / 2)], [-(W / 2 + m / 2), -(s + H / 2)],
+      [s + W / 2, -H / 4], [-(s + W / 2), -H / 4],
+      [W + m, -(s + H / 2)], [-(W + m), -(s + H / 2)], [0, s + H / 2]
+    ];
+    const placed = [];
+    const topLimit = els.top.offsetHeight + 8;
+    const bottomLimit = size.y - els.bottom.offsetHeight - 8;
+    const stops = courseStops(course).map((p) => ({ p, pt: map.latLngToLayerPoint([p.lat, p.lng]) }));
+    stops.sort((a, b) => a.pt.y - b.pt.y);
+    stops.forEach(({ p, pt }) => {
+      let best = null;
+      let bestCost = Infinity;
+      cands.forEach(([dx, dy], k) => {
+        const cx = pt.x + dx, cy = pt.y + dy;
+        const r = { l: cx - W / 2, r: cx + W / 2, t: cy - H / 2, b: cy + H / 2 };
+        let cost = k;
+        placed.forEach((q) => {
+          const ox = Math.min(r.r, q.r) - Math.max(r.l, q.l) + m;
+          const oy = Math.min(r.b, q.b) - Math.max(r.t, q.t) + m;
+          if (ox > 0 && oy > 0) cost += ox * oy;
+        });
+        const c1 = map.layerPointToContainerPoint(L.point(r.l, r.t));
+        const c2 = map.layerPointToContainerPoint(L.point(r.r, r.b));
+        if (c1.x < 4 || c2.x > size.x - 4) cost += 5000;
+        if (c1.y < topLimit || c2.y > bottomLimit) cost += 5000;
+        if (cost < bestCost) { bestCost = cost; best = { dx, dy, r }; }
       });
+      // Last resort: slide it sideways so it is never cut off by the screen edge.
+      const e1 = map.layerPointToContainerPoint(L.point(best.r.l, 0)).x;
+      const e2 = map.layerPointToContainerPoint(L.point(best.r.r, 0)).x;
+      const nudge = e1 < 4 ? 4 - e1 : (e2 > size.x - 4 ? size.x - 4 - e2 : 0);
+      if (nudge) { best.dx += nudge; best.r.l += nudge; best.r.r += nudge; }
+      placed.push(best.r);
+      // The leader line stops at the bubble's edge instead of running under it to the centre.
+      const tx = Math.abs(best.dx) > W / 2 ? 1 - W / (2 * Math.abs(best.dx)) : 0;
+      const ty = Math.abs(best.dy) > H / 2 ? 1 - H / (2 * Math.abs(best.dy)) : 0;
+      const t0 = Math.max(0, tx, ty);
+      bubbleLayout.set(p.id, { dx: Math.round(best.dx), dy: Math.round(best.dy), ex: Math.round(best.dx * t0), ey: Math.round(best.dy * t0) });
     });
   }
-  function bubTransform(l) { return 'translate(calc(-50% + ' + l.dx + 'px), calc(-100% + ' + l.dy + 'px))'; }
+  function bubTransform(l) { return 'translate(calc(-50% + ' + l.dx + 'px), calc(-50% + ' + l.dy + 'px))'; }
   function placeBubbles() {
     if (!course) return;
     layoutBubbles();
@@ -559,21 +579,22 @@
       const b = el.querySelector('.bub');
       const ln = el.querySelector('.bub-line line');
       if (b) b.style.transform = bubTransform(l);
-      if (ln) { ln.setAttribute('x2', l.dx); ln.setAttribute('y2', l.dy); }
+      if (ln) { ln.setAttribute('x2', l.ex); ln.setAttribute('y2', l.ey); }
     });
   }
   function bubbleIcon(p, step, cls) {
     const r = ratioOf(p);
-    const l = bubbleLayout.get(p.id) || { dx: 0, dy: -BUB.lift };
+    const l = bubbleLayout.get(p.id) || { dx: 0, dy: -(BUB.lift + BUB.h / 2), ex: 0, ey: -BUB.lift };
     return L.divIcon({
       className: 'pin-wrap',
       iconSize: null,
-      html: '<svg class="bub-line" width="1" height="1" aria-hidden="true"><line x1="0" y1="0" x2="' + l.dx + '" y2="' + l.dy + '"/></svg>' +
+      html: '<svg class="bub-line" width="1" height="1" aria-hidden="true"><line x1="0" y1="0" x2="' + l.ex + '" y2="' + l.ey + '"/></svg>' +
         '<span class="bub-dot bub-dot--' + tierOf(r) + '"></span>' +
         '<span class="bub' + cls + '" style="transform:' + bubTransform(l) + ';--i:' + step + '"><span class="bub__in">' +
           '<img src="' + esc(p.illust) + '" alt="" draggable="false">' +
+          '<span class="bub__step">' + (step + 1) + '</span>' +
           '<span class="bub__ratio badge badge--' + tierOf(r) + '">' + esc(ratioLabel(r)) + '</span>' +
-          '<span class="bub__label"><span class="bub__step">' + (step + 1) + '</span>' + esc(loc(p.tagline) || loc(p.name)) + '</span>' +
+          '<span class="bub__label">' + esc(loc(p.tagline) || loc(p.name)) + '</span>' +
         '</span></span>'
     });
   }
