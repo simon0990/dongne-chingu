@@ -33,22 +33,22 @@
   ],
   "sources": {
     "1in1jan.note.en.mp3": {
-      "text": "f68d53c2a2b7ddb3",
+      "text": "f7a98a8156031822",
       "voice": "cgSgspJ2msm6clMCkdW9",
       "model": "eleven_multilingual_v2"
     },
     "1in1jan.note.ja.mp3": {
-      "text": "2a408583f7218438",
+      "text": "b6a6bab6ed2f0b8f",
       "voice": "cgSgspJ2msm6clMCkdW9",
       "model": "eleven_multilingual_v2"
     },
     "1in1jan.note.ko.mp3": {
-      "text": "8493265889b17700",
+      "text": "057d318a0ad43249",
       "voice": "8jHHF8rMqMlg8if2mOUe",
       "model": "eleven_multilingual_v2"
     },
     "1in1jan.note.zh.mp3": {
-      "text": "a480d662e9d8cb2f",
+      "text": "d74a352bd3027a95",
       "voice": "cgSgspJ2msm6clMCkdW9",
       "model": "eleven_multilingual_v2"
     },
@@ -58,22 +58,22 @@
       "model": "eleven_multilingual_v2"
     },
     "cheongryu.note.en.mp3": {
-      "text": "64c7af08c3dd195a",
+      "text": "8723ee8110cc779f",
       "voice": "cgSgspJ2msm6clMCkdW9",
       "model": "eleven_multilingual_v2"
     },
     "cheongryu.note.ja.mp3": {
-      "text": "eebd8e5b47965318",
+      "text": "e4f59d2d8a106f76",
       "voice": "cgSgspJ2msm6clMCkdW9",
       "model": "eleven_multilingual_v2"
     },
     "cheongryu.note.ko.mp3": {
-      "text": "35492ac03259b752",
+      "text": "770e5430169b6691",
       "voice": "8jHHF8rMqMlg8if2mOUe",
       "model": "eleven_multilingual_v2"
     },
     "cheongryu.note.zh.mp3": {
-      "text": "493f1c98f60538cf",
+      "text": "8a915d0ff7ff5196",
       "voice": "cgSgspJ2msm6clMCkdW9",
       "model": "eleven_multilingual_v2"
     },
@@ -83,22 +83,22 @@
       "model": "eleven_multilingual_v2"
     },
     "dalgadeuk.note.en.mp3": {
-      "text": "10e39a4637c2ed48",
+      "text": "2b7be5d67c389e26",
       "voice": "cgSgspJ2msm6clMCkdW9",
       "model": "eleven_multilingual_v2"
     },
     "dalgadeuk.note.ja.mp3": {
-      "text": "804d60d8344d0e73",
+      "text": "60838ffd8a02f729",
       "voice": "cgSgspJ2msm6clMCkdW9",
       "model": "eleven_multilingual_v2"
     },
     "dalgadeuk.note.ko.mp3": {
-      "text": "b741ca954ca894b3",
+      "text": "30c0ef961bdcbe50",
       "voice": "8jHHF8rMqMlg8if2mOUe",
       "model": "eleven_multilingual_v2"
     },
     "dalgadeuk.note.zh.mp3": {
-      "text": "fbd46fb74777ece0",
+      "text": "d9b59d7fe73993a8",
       "voice": "cgSgspJ2msm6clMCkdW9",
       "model": "eleven_multilingual_v2"
     },
@@ -108,22 +108,22 @@
       "model": "eleven_multilingual_v2"
     },
     "jingwansa.note.en.mp3": {
-      "text": "f381b5fc67c8a810",
+      "text": "45e518b3a7473696",
       "voice": "cgSgspJ2msm6clMCkdW9",
       "model": "eleven_multilingual_v2"
     },
     "jingwansa.note.ja.mp3": {
-      "text": "8499874b0c50e89b",
+      "text": "d006db3440080ea2",
       "voice": "cgSgspJ2msm6clMCkdW9",
       "model": "eleven_multilingual_v2"
     },
     "jingwansa.note.ko.mp3": {
-      "text": "d69dcfba89a023c1",
+      "text": "d2d595f92e0f02a8",
       "voice": "8jHHF8rMqMlg8if2mOUe",
       "model": "eleven_multilingual_v2"
     },
     "jingwansa.note.zh.mp3": {
-      "text": "c35007af5644a398",
+      "text": "e85c4cfa8195b3ee",
       "voice": "cgSgspJ2msm6clMCkdW9",
       "model": "eleven_multilingual_v2"
     },
@@ -133,22 +133,22 @@
       "model": "eleven_multilingual_v2"
     },
     "tteoksan.note.en.mp3": {
-      "text": "b2eca6eaff611caa",
+      "text": "a498ff4cffcc5fb8",
       "voice": "cgSgspJ2msm6clMCkdW9",
       "model": "eleven_multilingual_v2"
     },
     "tteoksan.note.ja.mp3": {
-      "text": "d4ecf20f3706bd79",
+      "text": "1688f694486659c3",
       "voice": "cgSgspJ2msm6clMCkdW9",
       "model": "eleven_multilingual_v2"
     },
     "tteoksan.note.ko.mp3": {
-      "text": "8900c4105769e024",
+      "text": "1a0adf41de2e62db",
       "voice": "8jHHF8rMqMlg8if2mOUe",
       "model": "eleven_multilingual_v2"
     },
     "tteoksan.note.zh.mp3": {
-      "text": "607984b9f7f23ab3",
+      "text": "cbac3996671ccb6f",
       "voice": "cgSgspJ2msm6clMCkdW9",
       "model": "eleven_multilingual_v2"
     },
@@ -158,22 +158,22 @@
       "model": "eleven_multilingual_v2"
     },
     "zannolum.note.en.mp3": {
-      "text": "b9ab808d69f43f11",
+      "text": "d2d9f15b6bedcbee",
       "voice": "cgSgspJ2msm6clMCkdW9",
       "model": "eleven_multilingual_v2"
     },
     "zannolum.note.ja.mp3": {
-      "text": "c4b414f993bd063f",
+      "text": "20efa87286c7ad16",
       "voice": "cgSgspJ2msm6clMCkdW9",
       "model": "eleven_multilingual_v2"
     },
     "zannolum.note.ko.mp3": {
-      "text": "39afbf9eaa5f7c8c",
+      "text": "83800770d1cf812f",
       "voice": "8jHHF8rMqMlg8if2mOUe",
       "model": "eleven_multilingual_v2"
     },
     "zannolum.note.zh.mp3": {
-      "text": "12bf982f8af587f1",
+      "text": "f8fb1f3663fa2ac7",
       "voice": "cgSgspJ2msm6clMCkdW9",
       "model": "eleven_multilingual_v2"
     },
