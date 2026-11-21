@@ -295,7 +295,7 @@
       "lat": 37.638438,
       "lng": 126.946438,
       "address": "서울 은평구 진관길 73",
-      "photo": null,
+      "photo": "photos/jingwansa.jpg",
       "naverReviews": 3024,
       "googleReviews": 3343,
       "links": {
@@ -344,7 +344,13 @@
         "zh": "寺庙与茶",
         "ko": "절과 차"
       },
-      "illust": "illust/jingwansa.svg"
+      "illust": "illust/jingwansa.svg",
+      "photoAlt": {
+        "en": "The main hall of Jingwansa Temple under Bukhansan mountain",
+        "ja": "北漢山のふもとにある津寛寺の大雄殿",
+        "zh": "北汉山下津宽寺的大雄殿",
+        "ko": "북한산 아래 진관사 대웅전"
+      }
     },
     {
       "id": "dalgadeuk",
