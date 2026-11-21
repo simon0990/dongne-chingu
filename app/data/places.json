@@ -72,7 +72,7 @@
       "lat": 37.619563,
       "lng": 126.922313,
       "address": "서울 은평구 연서로 247-1 (연서시장)",
-      "photo": null,
+      "photo": "photos/tteoksan.jpg",
       "naverReviews": 2250,
       "googleReviews": 132,
       "links": {
@@ -130,7 +130,13 @@
         "zh": "市场早午饭",
         "ko": "시장 아점"
       },
-      "illust": "illust/tteoksan.svg"
+      "illust": "illust/tteoksan.svg",
+      "photoAlt": {
+        "en": "A big pan of tteokbokki topped with green onions at Tteoksan",
+        "ja": "トッサンの大鍋のトッポッキ、ネギたっぷり",
+        "zh": "Tteoksan 大锅里撒满葱的炒年糕",
+        "ko": "떡산의 대파 듬뿍 올린 떡볶이 큰 판"
+      }
     },
     {
       "id": "cheongryu",
