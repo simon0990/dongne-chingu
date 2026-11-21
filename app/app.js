@@ -1060,6 +1060,19 @@
     }
     html += '</section>';
 
+    /* "Say this" sits right under the local index: the most useful thing to have on screen at the counter. */
+    if (say && say.ko) {
+      html += '<section class="block"><h3>' + esc(t('sayThis')) + '</h3><div class="say__card">' +
+        '<p class="say__ko" lang="ko">' + esc(say.ko) + '</p>' +
+        (say.roman ? '<p class="say__roman">' + esc(say.roman) + '</p>' : '') +
+        (meaning(say) ? '<p class="say__mean">' + esc(meaning(say)) + '</p>' : '') +
+        '<div class="say__btns">' +
+          audioButton('say', t('hearIt'), p.id + '.say.ko.mp3') +
+          '<span><button type="button" class="btn btn--primary" data-act="sign">' + esc(t('showStaff')) + '</button></span>' +
+        '</div>' +
+      '</div></section>';
+    }
+
     if (says.length) {
       html += '<section class="block"><h3>' + esc(t('koreansSay')) + '</h3>' +
         '<ul class="says">' + says.map((s) => '<li>' + esc(s) + '</li>').join('') + '</ul>' +
@@ -1080,18 +1093,6 @@
         (order.roman ? '<p class="order__roman">' + esc(order.roman) + '</p>' : '') +
         ((meaning(order) || order.price) ? '<p class="order__mean">' + esc(meaning(order)) + (meaning(order) && order.price ? ' · ' : '') + esc(order.price || '') + '</p>' : '') +
       '</section>';
-    }
-
-    if (say && say.ko) {
-      html += '<section class="block"><h3>' + esc(t('sayThis')) + '</h3><div class="say__card">' +
-        '<p class="say__ko" lang="ko">' + esc(say.ko) + '</p>' +
-        (say.roman ? '<p class="say__roman">' + esc(say.roman) + '</p>' : '') +
-        (meaning(say) ? '<p class="say__mean">' + esc(meaning(say)) + '</p>' : '') +
-        '<div class="say__btns">' +
-          audioButton('say', t('hearIt'), p.id + '.say.ko.mp3') +
-          '<span><button type="button" class="btn btn--primary" data-act="sign">' + esc(t('showStaff')) + '</button></span>' +
-        '</div>' +
-      '</div></section>';
     }
 
     if (p.address) {
