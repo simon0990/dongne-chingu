@@ -156,7 +156,7 @@
       "lat": 37.640062,
       "lng": 126.936937,
       "address": "서울 은평구 진관동 219-11",
-      "photo": null,
+      "photo": "photos/cheongryu.jpg",
       "naverReviews": 6484,
       "googleReviews": 181,
       "links": {
@@ -212,7 +212,13 @@
         "zh": "冷面午餐",
         "ko": "평양냉면"
       },
-      "illust": "illust/cheongryu.svg"
+      "illust": "illust/cheongryu.svg",
+      "photoAlt": {
+        "en": "Pyongyang naengmyeon with sliced beef at Cheongryu",
+        "ja": "チョンリュの牛肉をのせた平壌冷麺",
+        "zh": "Cheongryu 铺着牛肉片的平壤冷面",
+        "ko": "청류의 수육 올린 평양냉면"
+      }
     },
     {
       "id": "1in1jan",
@@ -232,7 +238,7 @@
       "lat": 37.641062,
       "lng": 126.937938,
       "address": "서울 은평구 연서로 534",
-      "photo": null,
+      "photo": "photos/1in1jan.jpg",
       "naverReviews": 7148,
       "googleReviews": 1638,
       "links": {
@@ -281,7 +287,13 @@
         "zh": "屋顶美景",
         "ko": "옥상 뷰"
       },
-      "illust": "illust/1in1jan.svg"
+      "illust": "illust/1in1jan.svg",
+      "photoAlt": {
+        "en": "Coffee and rice cakes by the window over the hanok village and Bukhansan",
+        "ja": "韓屋村と北漢山を望む窓辺のコーヒーと餅",
+        "zh": "窗边的咖啡和年糕，窗外是韩屋村和北汉山",
+        "ko": "한옥마을과 북한산이 보이는 창가의 커피와 떡"
+      }
     },
     {
       "id": "jingwansa",
@@ -458,7 +470,7 @@
       "lat": 37.619062,
       "lng": 126.917938,
       "address": "서울 은평구 연서로29길 21-3 2층",
-      "photo": null,
+      "photo": "photos/zannolum.jpg",
       "naverReviews": 379,
       "googleReviews": 6,
       "links": {
@@ -516,7 +528,13 @@
         "zh": "传统酒小酌",
         "ko": "전통주"
       },
-      "illust": "illust/zannolum.svg"
+      "illust": "illust/zannolum.svg",
+      "photoAlt": {
+        "en": "An embroidered folding screen and a round lamp inside Zannolum",
+        "ja": "チャンノルム店内の刺繍屏風と丸い照明",
+        "zh": "Zannolum 店内的刺绣屏风和圆形灯",
+        "ko": "잔놀음 안의 자수 병풍과 원형 조명"
+      }
     }
   ],
   "courses": [
