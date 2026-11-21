@@ -73,11 +73,11 @@ a { color: var(--tarp-deep); }
   border-radius: 16px;
   box-shadow: var(--lift);
 }
-.brand__name { grid-area: name; min-width: 0; margin: 0; font-size: 1rem; line-height: 1; font-weight: 400; display: flex; align-items: baseline; gap: 7px; white-space: nowrap; }
+/* Romanized name sits under the Hangul one, so four language buttons never squeeze it into "Dongne Chin…". */
+.brand__name { grid-area: name; min-width: 0; margin: 0; font-size: 1rem; line-height: 1; font-weight: 400; display: flex; flex-direction: column; align-items: flex-start; gap: 3px; white-space: nowrap; }
 .brand__ko { font-family: var(--hangul); font-size: 25px; letter-spacing: -0.01em; color: var(--tarp); }
-.brand__ro { font-size: 13px; font-weight: 600; color: var(--ink); overflow: hidden; text-overflow: ellipsis; }
+.brand__ro { max-width: 100%; font-size: 11.5px; font-weight: 700; letter-spacing: 0.02em; color: var(--slate); overflow: hidden; text-overflow: ellipsis; }
 .brand__tag { grid-area: tag; margin: 0; font-size: 13px; color: var(--slate); }
-@media (max-width: 400px) { .brand__ro { display: none; } }
 
 .langs { grid-area: langs; display: flex; padding: 3px; background: var(--surface-2); border-radius: 999px; }
 .langs button {
