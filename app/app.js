@@ -67,7 +67,12 @@
       nextStop: 'Next stop',
       farLeg: 'Bus or taxi',
       play: 'Play my day',
-      tourEnd: 'That’s a day in {area}.'
+      tourEnd: 'That’s a day in {area}.',
+      whyBtn: 'Why this map?',
+      whyTitle: 'Why I made this',
+      why1: 'Koreans leave reviews on Naver Map, and travelers on Google Maps. So visitors rarely get to see where Koreans actually go.',
+      why2: 'This map compares the review counts on the two apps to show where locals really go.',
+      why3: 'Yeonsinnae is my neighborhood. From market tteokbokki to cold noodles in the hanok village, a walk to Jingwansa and the chicken place down the alley, the course is just my ordinary day.'
     },
     ja: {
       tagline: '{area}で地元の人が本当に通う店',
@@ -128,7 +133,12 @@
       nextStop: '次の場所へ',
       farLeg: 'バスかタクシーで',
       play: '私の一日を再生',
-      tourEnd: '{area}の一日でした。'
+      tourEnd: '{area}の一日でした。',
+      whyBtn: 'この地図について',
+      whyTitle: 'この地図をつくった理由',
+      why1: '韓国の人はNaver Mapに、旅行者はGoogleマップにレビューを書きます。だから旅行者には、韓国の人が本当に通う店が見えにくいのです。',
+      why2: 'この地図は2つのアプリのレビュー数を比べて、地元の人が本当に通う場所を見せます。',
+      why3: 'ヨンシンネは私の住む街です。市場のトッポッキから韓屋村の冷麺、津寛寺の散歩、路地裏のチキン屋まで、このコースは私のふだんの一日そのままです。'
     },
     zh: {
       tagline: '{area}本地人真正常去的地方',
@@ -189,7 +199,12 @@
       nextStop: '下一站',
       farLeg: '坐公交或打车',
       play: '播放我的一天',
-      tourEnd: '这就是{area}的一天。'
+      tourEnd: '这就是{area}的一天。',
+      whyBtn: '关于这张地图',
+      whyTitle: '我为什么做这张地图',
+      why1: '韩国人在 Naver 地图上写评价，游客在 Google 地图上写评价。所以游客很难看到韩国人真正常去的地方。',
+      why2: '这张地图比较两个应用的评价数量，告诉你本地人真正常去的地方。',
+      why3: '延新内是我住的街区。从市场炒年糕、韩屋村冷面、津宽寺散步，到巷子里的炸鸡店，这条路线就是我平常的一天。'
     },
     ko: {
       tagline: '{area} 사람들이 진짜 가는 곳',
@@ -250,7 +265,12 @@
       nextStop: '다음 장소',
       farLeg: '버스나 택시로',
       play: '나의 하루 재생',
-      tourEnd: '{area}에서의 하루였어요.'
+      tourEnd: '{area}에서의 하루였어요.',
+      whyBtn: '만든 이유',
+      whyTitle: '왜 만들었나요',
+      why1: '한국 사람은 네이버 지도에, 여행자는 구글 지도에 후기를 남겨요. 그래서 외국인은 한국인이 실제로 가는 곳을 보기 어려워요.',
+      why2: '이 지도는 두 앱의 리뷰 수를 비교해서 현지인이 진짜 가는 곳을 보여 줘요.',
+      why3: '연신내는 제가 사는 동네예요. 시장 떡볶이부터 한옥마을 냉면, 진관사 산책, 골목 치킨집까지, 제 평범한 하루를 그대로 코스로 만들었어요.'
     }
   };
   /* In Korean the "meaning" line would just repeat the Korean sentence, so it is left out. */
@@ -279,7 +299,7 @@
   const els = {
     top: $('#top'), bottom: $('#bottom'), tagline: $('#tagline'), legend: $('#legend'),
     makerNote: $('#makerNote'), hint: $('#hint'), chips: $('#chips'), rail: $('#rail'),
-    sheet: $('#sheet'), sign: $('#sign'), toast: $('#toast'), play: $('#play'), tourCap: $('#tourCap')
+    sheet: $('#sheet'), sign: $('#sign'), toast: $('#toast'), play: $('#play'), tourCap: $('#tourCap'), why: $('#why')
   };
 
   let data = null;
@@ -760,6 +780,7 @@
       });
     });
     els.legend.addEventListener('click', () => { stopTour(); openInfo(); });
+    els.why.addEventListener('click', () => { stopTour(); openInfo('why'); });
     els.hint.addEventListener('click', (e) => { if (e.target.closest('button')) dismissHint(); });
     els.play.addEventListener('click', () => { if (tour) stopTour(); else startTour(); });
     // Skip ahead: stop this stop's voice and fly straight to the next one.
@@ -810,6 +831,7 @@
     document.documentElement.lang = lang;
     document.querySelectorAll('.langs button').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.lang === lang)));
     els.tagline.textContent = t('tagline', { area: loc(data.meta.area) });
+    els.why.textContent = t('whyBtn');
     els.legend.innerHTML =
       '<span class="legend__item"><span class="swatch swatch--local"></span>' + esc(t('keyLocal')) + '</span>' +
       '<span class="legend__item"><span class="swatch swatch--mixed"></span>' + esc(t('keyMixed')) + '</span>' +
@@ -925,8 +947,10 @@
     else map.flyTo(target, z, { duration: 0.6 });
   }
 
-  function openInfo() {
+  let infoMode = 'pins';     // the info sheet shows either how to read pins, or why the map exists
+  function openInfo(mode) {
     stopAudio();
+    infoMode = mode === 'why' ? 'why' : 'pins';
     current = 'info';
     renderInfo();
     showSheet();
@@ -1075,6 +1099,19 @@
   }
 
   function renderInfo() {
+    if (infoMode === 'why') {
+      els.sheet.innerHTML = closeButton() +
+        '<div class="sheet__body info">' +
+          '<h2 class="sheet__name" id="sheetTitle">' + esc(t('whyTitle')) + '</h2>' +
+          '<section class="block">' +
+            '<p>' + esc(t('why1')) + '</p>' +
+            '<p>' + esc(t('why2')) + '</p>' +
+            '<p>' + esc(t('why3')) + '</p>' +
+            '<button type="button" class="btn" data-act="pins">' + esc(t('howTo')) + '</button>' +
+          '</section>' +
+        '</div>';
+      return;
+    }
     const th = data.meta.thresholds;
     els.sheet.innerHTML = closeButton() +
       '<div class="sheet__body info">' +
@@ -1095,10 +1132,12 @@
 
   function onSheetClick(e) {
     const b = e.target.closest('[data-act]');
-    if (!b || !current || (current === 'info' && b.dataset.act !== 'close')) {
+    if (current === 'info') {
       if (b && b.dataset.act === 'close') closeSheet();
+      else if (b && b.dataset.act === 'pins') { infoMode = 'pins'; renderInfo(); els.sheet.scrollTop = 0; }
       return;
     }
+    if (!b || !current) return;
     const p = current;
     switch (b.dataset.act) {
       case 'close': closeSheet(); break;

@@ -713,3 +713,18 @@ body.is-touring .legend, body.is-touring .hint, body.is-touring .maker-note { di
 
 /* Korean mode: the Korean name line would repeat the title. */
 html[lang="ko"] .card__ko, html[lang="ko"] .sheet__ko { display: none; }
+
+/* "Why this map?": the maker's intent, opened as a sheet. */
+.why {
+  margin-left: 2px;
+  padding: 2px 9px;
+  border: 1.5px solid var(--tarp);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--tarp-deep);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.4;
+  white-space: nowrap;
+  vertical-align: 1px;
+}
