@@ -350,11 +350,11 @@
         ]
       },
       "say": {
-        "ko": "찻집이 어디예요?",
-        "roman": "Chatjib-i eodiyeyo?",
-        "en": "Where is the tea house?",
-        "ja": "お茶屋さんはどこですか？",
-        "zh": "茶馆在哪里？"
+        "ko": "어험, 공기가 좋구나~",
+        "roman": "Eoheom, gonggi-ga jokuna~",
+        "en": "Ahem, what fresh air~",
+        "ja": "えっへん、空気がいいねぇ〜",
+        "zh": "咳咳，空气真好啊~"
       },
       "tagline": {
         "en": "Temple & tea",
