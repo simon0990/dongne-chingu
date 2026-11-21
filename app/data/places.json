@@ -136,7 +136,13 @@
         "ja": "トッサンの大鍋のトッポッキ、ネギたっぷり",
         "zh": "Tteoksan 大锅里撒满葱的炒年糕",
         "ko": "떡산의 대파 듬뿍 올린 떡볶이 큰 판"
-      }
+      },
+      "photos": [
+        "photos/tteoksan.jpg",
+        "photos/tteoksan-2.jpg",
+        "photos/tteoksan-3.jpg",
+        "photos/tteoksan-4.jpg"
+      ]
     },
     {
       "id": "cheongryu",
@@ -218,7 +224,11 @@
         "ja": "チョンリュの牛肉をのせた平壌冷麺",
         "zh": "Cheongryu 铺着牛肉片的平壤冷面",
         "ko": "청류의 수육 올린 평양냉면"
-      }
+      },
+      "photos": [
+        "photos/cheongryu.jpg",
+        "photos/cheongryu-2.jpg"
+      ]
     },
     {
       "id": "1in1jan",
@@ -293,7 +303,11 @@
         "ja": "韓屋村と北漢山を望む窓辺のコーヒーと餅",
         "zh": "窗边的咖啡和年糕，窗外是韩屋村和北汉山",
         "ko": "한옥마을과 북한산이 보이는 창가의 커피와 떡"
-      }
+      },
+      "photos": [
+        "photos/1in1jan.jpg",
+        "photos/1in1jan-2.jpg"
+      ]
     },
     {
       "id": "jingwansa",
@@ -368,7 +382,12 @@
         "ja": "北漢山のふもとにある津寛寺の大雄殿",
         "zh": "北汉山下津宽寺的大雄殿",
         "ko": "북한산 아래 진관사 대웅전"
-      }
+      },
+      "photos": [
+        "photos/jingwansa.jpg",
+        "photos/jingwansa-2.jpg",
+        "photos/jingwansa-3.jpg"
+      ]
     },
     {
       "id": "dalgadeuk",
@@ -534,7 +553,13 @@
         "ja": "チャンノルム店内の刺繍屏風と丸い照明",
         "zh": "Zannolum 店内的刺绣屏风和圆形灯",
         "ko": "잔놀음 안의 자수 병풍과 원형 조명"
-      }
+      },
+      "photos": [
+        "photos/zannolum.jpg",
+        "photos/zannolum-2.jpg",
+        "photos/zannolum-3.jpg",
+        "photos/zannolum-4.jpg"
+      ]
     }
   ],
   "courses": [

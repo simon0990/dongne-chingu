@@ -1027,7 +1027,13 @@
 
     let html = closeButton();
     let media;
-    if (p.photo) media = '<img class="sheet__photo" src="' + esc(p.photo) + '" alt="' + esc(loc(p.photoAlt) || loc(p.name)) + '">';
+    const photos = (Array.isArray(p.photos) && p.photos.length) ? p.photos : (p.photo ? [p.photo] : []);
+    if (photos.length > 1) {
+      // Several photos: a swipeable strip with a "1 / N" counter.
+      media = '<div class="gallery" tabindex="0" aria-label="' + esc(loc(p.name)) + '">' +
+        photos.map((src, i) => '<img class="sheet__photo" src="' + esc(src) + '" alt="' + esc(i === 0 ? (loc(p.photoAlt) || loc(p.name)) : loc(p.name)) + '"' + (i ? ' loading="lazy"' : '') + '>').join('') +
+        '</div><span class="gallery__count" aria-hidden="true">1 / ' + photos.length + '</span>';
+    } else if (photos.length) media = '<img class="sheet__photo" src="' + esc(photos[0]) + '" alt="' + esc(loc(p.photoAlt) || loc(p.name)) + '">';
     else if (p.illust) media = '<img class="sheet__photo sheet__illust" src="' + esc(p.illust) + '" alt="">';
     else media = '<div class="sheet__placeholder" lang="ko" aria-hidden="true">' + esc(p.emoji || firstHangul(p.name.ko)) + '</div>';
     html += '<div class="sheet__media">' + media + '</div>';
@@ -1118,6 +1124,13 @@
     }
     html += '</div>';
     els.sheet.innerHTML = html;
+    const gallery = els.sheet.querySelector('.gallery');
+    if (gallery) {
+      const count = els.sheet.querySelector('.gallery__count');
+      gallery.addEventListener('scroll', () => {
+        count.textContent = (Math.round(gallery.scrollLeft / gallery.clientWidth) + 1) + ' / ' + gallery.children.length;
+      }, { passive: true });
+    }
   }
 
   function renderInfo() {
