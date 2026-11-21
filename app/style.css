@@ -44,8 +44,9 @@ a { color: var(--tarp-deep); }
 /* Full colour, softened a little so the bubbles and pins stay on top. */
 .leaflet-tile-pane { filter: saturate(0.85) brightness(1.04) contrast(0.92); }
 .leaflet-container { font-family: var(--font); }
-.leaflet-bottom { bottom: var(--bottom-h); }
-.leaflet-control-attribution { font-size: 10px; }
+/* Map credit sits on the very bottom edge, below the place cards (OSM requires it to stay visible). */
+.leaflet-bottom { bottom: var(--safe-b); }
+.leaflet-control-attribution { font-size: 10px; line-height: 1.5; }
 
 /* ---------- top ---------- */
 .top {
@@ -283,7 +284,7 @@ a { color: var(--tarp-deep); }
   right: 0;
   bottom: 0;
   z-index: 500;
-  padding-bottom: calc(var(--safe-b) + 12px);
+  padding-bottom: calc(var(--safe-b) + 20px);
   pointer-events: none;
 }
 .bottom > * { pointer-events: auto; }
