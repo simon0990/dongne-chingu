@@ -4,7 +4,7 @@
 (() => {
   'use strict';
 
-  const LANGS = ['en', 'ja', 'zh'];
+  const LANGS = ['en', 'ja', 'zh', 'ko']; // ko is offered as a toggle only, never picked from the browser language
   const SPEECH = { en: 'en-US', ja: 'ja-JP', zh: 'zh-CN', ko: 'ko-KR' };
 
   const UI = {
@@ -190,8 +190,71 @@
       farLeg: '坐公交或打车',
       play: '播放我的一天',
       tourEnd: '这就是{area}的一天。'
+    },
+    ko: {
+      tagline: '{area} 사람들이 진짜 가는 곳',
+      local: '현지인 위주',
+      mixed: '현지인 반 여행자 반',
+      tourist: '여행자 위주',
+      unknown: '아직 숫자 없음',
+      keyLocal: '현지인',
+      keyMixed: '반반',
+      keyTourist: '여행자',
+      howTo: '핀 읽는 법',
+      all: '전체',
+      onlyLocal: '현지인만',
+      emptyTag: '이 태그의 장소가 아직 없어요.',
+      koreanReviews: '한국인 리뷰',
+      onNaver: '네이버 지도',
+      travelerReviews: '여행자 리뷰',
+      onGoogle: '구글 지도',
+      ratioLine: '여행자 리뷰 1개당 한국인 리뷰 {n}개',
+      ratioOnlyLocal: '여행자 리뷰가 아직 없어요. 한국인 리뷰만 있어요.',
+      ratioUnknown: '리뷰 수를 아직 넣지 않았어요.',
+      checked: '{date} 기준 리뷰 수',
+      fromFriend: '동네 친구의 한마디',
+      listen: '듣기',
+      stop: '멈춤',
+      voiceCredit: '음성: ElevenLabs',
+      koreansSay: '한국인 후기 요약',
+      koreansSayNote: '한국인 후기를 읽고 제 말로 정리했어요.',
+      readOnNaver: '네이버 지도에서 원문 보기',
+      order: '한국인이 주로 시키는 것',
+      sayThis: '이렇게 말해 보세요',
+      hearIt: '발음 듣기',
+      showStaff: '직원에게 보여 주기',
+      tapToClose: '아무 곳이나 누르면 닫혀요',
+      openNaver: '네이버 지도에서 열기',
+      openGoogle: '구글 지도에서 열기',
+      address: '한국어 주소',
+      addressHint: '택시 기사님께 보여 주거나 지도 앱에 붙여 넣으세요.',
+      copy: '주소 복사',
+      copied: '주소를 복사했어요',
+      copyFailed: '복사하지 못했어요. 주소를 길게 눌러 복사하세요.',
+      close: '닫기',
+      noAudio: '이 기기에서는 음성을 재생할 수 없어요.',
+      info1: '한국 사람은 주로 네이버 지도에, 여행자는 주로 구글 지도에 리뷰를 남겨요. 그래서 두 앱에는 서로 다른 사람들의 목소리가 모여요.',
+      info2: '핀의 숫자는 여행자 리뷰 1개당 한국인 리뷰가 몇 개인지를 뜻해요.',
+      infoLocal: '{local}배 이상',
+      infoMixed: '{mixed}–{local}배',
+      infoTourist: '{mixed}배 미만',
+      info3: '판정이 아니라 참고 지표예요. 새 가게나 체인점은 숫자가 왜곡될 수 있어요.',
+      loadError: '장소를 불러오지 못했어요.',
+      hint: '= 여행자 리뷰 1개당 한국인 리뷰 {n}개. 주황 핀이 현지인이 가는 곳이에요.',
+      gotIt: '알겠어요',
+      walk: '{n}분',
+      walkFrom: '{here}에서 걸어서 약 {n}분',
+      courseStats: '{n}곳 · 걷는 시간 약 {m}분',
+      courseStart: '{here}에서 출발',
+      step: '{n}곳 중 {i}번째',
+      nextStop: '다음 장소',
+      farLeg: '버스나 택시로',
+      play: '나의 하루 재생',
+      tourEnd: '{area}에서의 하루였어요.'
     }
   };
+  /* In Korean the "meaning" line would just repeat the Korean sentence, so it is left out. */
+  function meaning(o) { return lang === 'ko' ? '' : loc(o); }
 
   const ICON = {
     play: '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2.5v11l9-5.5z" fill="currentColor"/></svg>',
@@ -970,7 +1033,7 @@
       html += '<section class="block"><h3>' + esc(t('order')) + '</h3>' +
         '<p class="order__ko" lang="ko">' + esc(order.ko) + '</p>' +
         (order.roman ? '<p class="order__roman">' + esc(order.roman) + '</p>' : '') +
-        '<p class="order__mean">' + esc(loc(order)) + (order.price ? ' · ' + esc(order.price) : '') + '</p>' +
+        ((meaning(order) || order.price) ? '<p class="order__mean">' + esc(meaning(order)) + (meaning(order) && order.price ? ' · ' : '') + esc(order.price || '') + '</p>' : '') +
       '</section>';
     }
 
@@ -978,7 +1041,7 @@
       html += '<section class="block"><h3>' + esc(t('sayThis')) + '</h3><div class="say__card">' +
         '<p class="say__ko" lang="ko">' + esc(say.ko) + '</p>' +
         (say.roman ? '<p class="say__roman">' + esc(say.roman) + '</p>' : '') +
-        '<p class="say__mean">' + esc(loc(say)) + '</p>' +
+        (meaning(say) ? '<p class="say__mean">' + esc(meaning(say)) + '</p>' : '') +
         '<div class="say__btns">' +
           audioButton('say', t('hearIt'), p.id + '.say.ko.mp3') +
           '<span><button type="button" class="btn btn--primary" data-act="sign">' + esc(t('showStaff')) + '</button></span>' +
@@ -1122,7 +1185,7 @@
     els.sign.innerHTML =
       '<span class="sign__ko" lang="ko">' + esc(p.say.ko) + '</span>' +
       (p.say.roman ? '<span class="sign__roman">' + esc(p.say.roman) + '</span>' : '') +
-      '<span class="sign__mean">' + esc(loc(p.say)) + '</span>' +
+      (meaning(p.say) ? '<span class="sign__mean">' + esc(meaning(p.say)) + '</span>' : '') +
       '<span class="sign__hint">' + esc(t('tapToClose')) + '</span>';
     els.sign.setAttribute('aria-label', t('close'));
   }

@@ -146,7 +146,7 @@ def main():
     sources = load_sources(out)
 
     def voice_for(job):
-        return (a.ko_voice or a.voice) if job["kind"] == "say" else a.voice
+        return (a.ko_voice or a.voice) if job["kind"] == "say" or job["file"].endswith(".ko.mp3") else a.voice
 
     if a.manifest_only:
         write_manifest(data, out, sources, a.prune)

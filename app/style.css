@@ -710,3 +710,6 @@ body.is-touring .legend, body.is-touring .hint, body.is-touring .maker-note { di
 @media (prefers-reduced-motion: reduce) {
   .bub.is-intro .bub__in { animation: none; }
 }
+
+/* Korean mode: the Korean name line would repeat the title. */
+html[lang="ko"] .card__ko, html[lang="ko"] .sheet__ko { display: none; }

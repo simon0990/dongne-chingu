@@ -31,22 +31,26 @@
     "solo": {
       "en": "Fine alone",
       "ja": "一人でも入りやすい",
-      "zh": "一个人也方便"
+      "zh": "一个人也方便",
+      "ko": "혼자 가기 좋음"
     },
     "late": {
       "en": "Open late",
       "ja": "夜遅くまで営業",
-      "zh": "营业到很晚"
+      "zh": "营业到很晚",
+      "ko": "늦게까지 영업"
     },
     "rainy": {
       "en": "Good on rainy days",
       "ja": "雨の日でもOK",
-      "zh": "雨天也适合"
+      "zh": "雨天也适合",
+      "ko": "비 오는 날"
     },
     "pets": {
       "en": "Pets welcome",
       "ja": "ペット同伴OK",
-      "zh": "可带宠物"
+      "zh": "可带宠物",
+      "ko": "반려동물 동반"
     }
   },
   "places": [
@@ -61,7 +65,8 @@
       "category": {
         "en": "Tteokbokki stall in Yeonseo Market",
         "ja": "ヨンソ市場のトッポッキ店",
-        "zh": "延曙市场里的炒年糕店"
+        "zh": "延曙市场里的炒年糕店",
+        "ko": "연서시장 떡볶이집"
       },
       "emoji": "🍢",
       "lat": 37.619563,
@@ -80,7 +85,8 @@
       "note": {
         "en": "This stall was on Netflix's Culinary Class Wars season 2. It's inside Yeonseo Market, a few minutes from the station. The sauce is thick, sweet and spicy, and the fried snacks are huge, so dip them in it.",
         "ja": "Netflix「白と黒のスプーン」シーズン2に登場したお店。駅から数分のヨンソ市場の中にあります。甘辛くとろっとしたソースに、大きな天ぷらをつけて食べて。",
-        "zh": "这家店上过 Netflix《黑白厨师》第二季，就在离车站几分钟的延曙市场里。酱汁浓稠甜辣，炸物个头很大，蘸着酱吃最好。"
+        "zh": "这家店上过 Netflix《黑白厨师》第二季，就在离车站几分钟的延曙市场里。酱汁浓稠甜辣，炸物个头很大，蘸着酱吃最好。",
+        "ko": "넷플릭스 흑백요리사2에 나온 집이에요. 역에서 몇 분 거리, 연서시장 안에 있어요. 소스가 걸쭉하고 달달 매콤해서 큼직한 튀김을 푹 찍어 먹으면 돼요."
       },
       "koreansSay": {
         "en": [
@@ -97,6 +103,11 @@
           "用米糖浆和辣椒酱熬的酱汁，浓稠甜辣",
           "炸物个头大，非常酥脆",
           "也有人说涨价后分量变少了"
+        ],
+        "ko": [
+          "조청과 고추장으로 만든 걸쭉하고 달달 매콤한 소스",
+          "튀김이 크고 아주 바삭해요",
+          "가격이 오르면서 양이 줄었다는 말도 있어요"
         ]
       },
       "order": {
@@ -116,7 +127,8 @@
       "tagline": {
         "en": "Market brunch",
         "ja": "市場でブランチ",
-        "zh": "市场早午饭"
+        "zh": "市场早午饭",
+        "ko": "시장 아점"
       },
       "illust": "illust/tteoksan.svg"
     },
@@ -131,7 +143,8 @@
       "category": {
         "en": "Pyongyang-style cold noodles",
         "ja": "平壌冷麺の店",
-        "zh": "平壤冷面店"
+        "zh": "平壤冷面店",
+        "ko": "평양냉면집"
       },
       "emoji": "🍜",
       "lat": 37.640062,
@@ -148,7 +161,8 @@
       "note": {
         "en": "This is Pyongyang-style naengmyeon: a light, clean broth, not the sweet and sour kind. Add the bracken (gosari) dumplings, which few places make.",
         "ja": "ここは平壌式の冷麺。甘酸っぱいタイプではなく、あっさり澄んだスープです。珍しいワラビ餃子もぜひ。",
-        "zh": "这里是平壤式冷面，汤底清淡干净，不是酸甜口味。再点一份少见的蕨菜饺子。"
+        "zh": "这里是平壤式冷面，汤底清淡干净，不是酸甜口味。再点一份少见的蕨菜饺子。",
+        "ko": "여긴 평양냉면이에요. 새콤달콤한 냉면이 아니라 슴슴하고 맑은 육수예요. 흔치 않은 고사리만두도 꼭 같이 시켜 보세요."
       },
       "koreansSay": {
         "en": [
@@ -165,6 +179,11 @@
           "平壤冷面汤头清爽鲜香",
           "蕨菜饺子和绿豆煎饼很受欢迎",
           "紫苏油拌面和牛骨汤也很受好评"
+        ],
+        "ko": [
+          "평양냉면 육수가 깔끔하고 고소해요",
+          "고사리만두와 녹두빈대떡이 인기예요",
+          "들기름 국수와 곰탕도 평이 좋아요"
         ]
       },
       "order": {
@@ -184,7 +203,8 @@
       "tagline": {
         "en": "Cold noodles",
         "ja": "冷麺ランチ",
-        "zh": "冷面午餐"
+        "zh": "冷面午餐",
+        "ko": "평양냉면"
       },
       "illust": "illust/cheongryu.svg"
     },
@@ -199,7 +219,8 @@
       "category": {
         "en": "Rooftop café over the hanok village",
         "ja": "韓屋村を見下ろすルーフトップカフェ",
-        "zh": "俯瞰韩屋村的屋顶咖啡馆"
+        "zh": "俯瞰韩屋村的屋顶咖啡馆",
+        "ko": "한옥마을이 내려다보이는 루프탑 카페"
       },
       "emoji": "☕",
       "lat": 37.641062,
@@ -216,7 +237,8 @@
       "note": {
         "en": "The name is the rule: one drink per person. Head straight to the 4th floor or the rooftop for the view over the hanok roofs and Bukhansan mountain.",
         "ja": "店名どおり、1人1杯がルール。4階か屋上へ行けば、韓屋の屋根と北漢山が一望できます。",
-        "zh": "店名就是规矩：每人点一杯。直接上四楼或屋顶，可以看到韩屋屋顶和北汉山。"
+        "zh": "店名就是规矩：每人点一杯。直接上四楼或屋顶，可以看到韩屋屋顶和北汉山。",
+        "ko": "이름 그대로 한 사람당 한 잔이 규칙이에요. 바로 4층이나 옥상으로 올라가면 한옥 지붕이랑 북한산이 한눈에 보여요."
       },
       "koreansSay": {
         "en": [
@@ -233,6 +255,11 @@
           "大家是冲着韩屋村和山景来的",
           "楼上和屋顶比较安静",
           "周末人多，咖啡本身一般"
+        ],
+        "ko": [
+          "한옥마을과 산 풍경을 보러 오는 곳",
+          "위층과 옥상이 더 조용해요",
+          "주말엔 붐비고, 커피 맛은 무난한 편이에요"
         ]
       },
       "say": {
@@ -245,7 +272,8 @@
       "tagline": {
         "en": "Rooftop view",
         "ja": "屋上の絶景",
-        "zh": "屋顶美景"
+        "zh": "屋顶美景",
+        "ko": "옥상 뷰"
       },
       "illust": "illust/1in1jan.svg"
     },
@@ -260,7 +288,8 @@
       "category": {
         "en": "Historic Buddhist temple by the forest",
         "ja": "森の中の歴史ある仏教寺院",
-        "zh": "森林边历史悠久的佛教寺庙"
+        "zh": "森林边历史悠久的佛教寺庙",
+        "ko": "숲 옆의 오래된 절"
       },
       "emoji": "🪷",
       "lat": 37.638438,
@@ -277,7 +306,8 @@
       "note": {
         "en": "About a 10-minute walk up from the hanok village. It's quiet, and the tea house inside is a good place to rest your legs before heading back.",
         "ja": "韓屋村から歩いて10分ほど。静かで、境内のお茶屋さんでひと休みしてから戻るのがおすすめ。",
-        "zh": "从韩屋村步行约10分钟。这里很安静，回去之前可以在寺内的茶馆歇歇脚。"
+        "zh": "从韩屋村步行约10分钟。这里很安静，回去之前可以在寺内的茶馆歇歇脚。",
+        "ko": "한옥마을에서 걸어서 10분쯤 올라가요. 조용하고, 절 안 찻집에서 다리 좀 쉬었다가 내려오면 좋아요."
       },
       "koreansSay": {
         "en": [
@@ -294,6 +324,11 @@
           "紧挨森林溪谷的宁静寺庙",
           "寺内有传统茶馆",
           "可以参加寺院寄宿体验"
+        ],
+        "ko": [
+          "숲 계곡 옆의 조용한 절",
+          "경내에 전통 찻집이 있어요",
+          "템플스테이도 할 수 있어요"
         ]
       },
       "say": {
@@ -306,7 +341,8 @@
       "tagline": {
         "en": "Temple & tea",
         "ja": "お寺とお茶",
-        "zh": "寺庙与茶"
+        "zh": "寺庙与茶",
+        "ko": "절과 차"
       },
       "illust": "illust/jingwansa.svg"
     },
@@ -321,7 +357,8 @@
       "category": {
         "en": "Neighborhood fried chicken and draft beer",
         "ja": "地元のチキンと生ビール",
-        "zh": "街坊炸鸡配生啤"
+        "zh": "街坊炸鸡配生啤",
+        "ko": "동네 치킨집과 생맥주"
       },
       "emoji": "🍗",
       "lat": 37.617812,
@@ -338,7 +375,8 @@
       "note": {
         "en": "Back in Yeonsinnae for dinner. A small chicken place down an alley, not a chain. Get half plain fried, half soy sauce, with a draft beer.",
         "ja": "夕食はヨンシンネに戻って。路地裏の小さなチキン屋で、チェーン店ではありません。フライドとしょうゆ味のハーフ&ハーフに生ビールを。",
-        "zh": "晚饭回到延新内。这是巷子里的一家小炸鸡店，不是连锁店。点原味和酱油味各半，再配一杯生啤。"
+        "zh": "晚饭回到延新内。这是巷子里的一家小炸鸡店，不是连锁店。点原味和酱油味各半，再配一杯生啤。",
+        "ko": "저녁은 연신내로 돌아와서 먹어요. 체인점이 아닌 골목 안 작은 치킨집이에요. 후라이드 반 간장 반에 생맥주 한 잔 하세요."
       },
       "koreansSay": {
         "en": [
@@ -355,6 +393,11 @@
           "吃腻了连锁炸鸡的本地人会来这里",
           "奶油图巴炒年糕配炸鸡是人气组合",
           "原味酱油味各半配生啤是常点的"
+        ],
+        "ko": [
+          "체인 치킨이 질릴 때 찾는 동네 맛집",
+          "투움바떡볶이와 치킨 조합이 인기예요",
+          "후라이드 반 간장 반에 생맥주가 기본이에요"
         ]
       },
       "order": {
@@ -374,7 +417,8 @@
       "tagline": {
         "en": "Chicken & beer",
         "ja": "チキンとビール",
-        "zh": "炸鸡配啤酒"
+        "zh": "炸鸡配啤酒",
+        "ko": "치킨과 맥주"
       },
       "illust": "illust/dalgadeuk.svg"
     },
@@ -389,7 +433,8 @@
       "category": {
         "en": "Korean traditional liquor bar",
         "ja": "韓国伝統酒バー",
-        "zh": "韩国传统酒吧"
+        "zh": "韩国传统酒吧",
+        "ko": "전통주 바"
       },
       "emoji": "🥃",
       "lat": 37.619062,
@@ -408,7 +453,8 @@
       "note": {
         "en": "End the night with Korean traditional liquor. Tell the owner what you like and ask for a recommendation. You can order by the glass. Closed on Mondays.",
         "ja": "締めは韓国の伝統酒で。好みを伝えて、店主におすすめを聞いてみて。グラスで頼めます。月曜定休。",
-        "zh": "用韩国传统酒结束这一晚。告诉老板你的口味，请他推荐，可以按杯点。周一休息。"
+        "zh": "用韩国传统酒结束这一晚。告诉老板你的口味，请他推荐，可以按杯点。周一休息。",
+        "ko": "마무리는 전통주로 해요. 좋아하는 맛을 말하면 사장님이 추천해 주고, 잔으로도 시킬 수 있어요. 월요일은 쉬어요."
       },
       "koreansSay": {
         "en": [
@@ -425,6 +471,11 @@
           "韩国传统酒种类很多",
           "下酒菜物超所值",
           "老板很热情，乐意推荐"
+        ],
+        "ko": [
+          "전통주 종류가 아주 많아요",
+          "안주가 가격 대비 훌륭해요",
+          "사장님이 친절하게 추천해 줘요"
         ]
       },
       "order": {
@@ -444,7 +495,8 @@
       "tagline": {
         "en": "Korean sool",
         "ja": "伝統酒で一杯",
-        "zh": "传统酒小酌"
+        "zh": "传统酒小酌",
+        "ko": "전통주"
       },
       "illust": "illust/zannolum.svg"
     }
@@ -455,12 +507,14 @@
       "name": {
         "en": "A day in Eunpyeong",
         "ja": "恩平で過ごす一日",
-        "zh": "恩平一日游"
+        "zh": "恩平一日游",
+        "ko": "은평에서 보내는 하루"
       },
       "blurb": {
         "en": "Market brunch, cold noodles and coffee by the hanok village, a quiet temple, then chicken and Korean drinks back in Yeonsinnae.",
         "ja": "市場でブランチ、韓屋村で冷麺とコーヒー、静かなお寺。夜はヨンシンネに戻ってチキンと伝統酒。",
-        "zh": "市场里吃早午饭，韩屋村吃冷面喝咖啡，再去安静的寺庙。晚上回延新内吃炸鸡、喝传统酒。"
+        "zh": "市场里吃早午饭，韩屋村吃冷面喝咖啡，再去安静的寺庙。晚上回延新内吃炸鸡、喝传统酒。",
+        "ko": "시장에서 아점, 한옥마을에서 냉면과 커피, 조용한 절. 저녁엔 연신내로 돌아와 치킨과 전통주."
       },
       "stops": [
         "tteoksan",
@@ -469,7 +523,8 @@
           "move": {
             "en": "Bus 7211 from Yeonsinnae Stn. exit 3",
             "ja": "ヨンシンネ駅3番出口からバス7211番",
-            "zh": "从延新内站3号出口乘7211路公交"
+            "zh": "从延新内站3号出口乘7211路公交",
+            "ko": "연신내역 3번 출구에서 7211번 버스"
           }
         },
         "1in1jan",
